@@ -37,6 +37,7 @@ jobs:
     needs: build-project
     steps:
       - name: Create GitHub release
+        id: create-new-release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -49,7 +50,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create-new.release.outputs.upload_url }}
+          upload_url: ${{ steps.create-new-release.outputs.upload_url }}
           asset_path: ./build/libs/DiscordBot.jar
           asset_name: DiscordBot-v${{ github.run_number }}.jar
           asset_content_type: application/java-archive
