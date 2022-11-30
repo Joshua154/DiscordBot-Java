@@ -36,5 +36,3 @@ jobs:
                     name: build-artifacts
                     path: |
                         build/libs/*.jar
-                        build/reports/tests/test/index.html
-                        build/reports/jacoco/test/html/index.html
