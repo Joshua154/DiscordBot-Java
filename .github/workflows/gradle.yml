@@ -49,11 +49,12 @@ jobs:
         id: pl
         uses: Rishabh510/Path-lister-action@master
         with:
-          path: "./"
+          path: ${GITHUB_WORKSPACE}
           type: ".jar"
 
       - name: Output results
         run: |
+          echo ${{GITHUB_WORKSPACE}}   ${GITHUB_WORKSPACE}
           echo "Found ${{ steps.pl.outputs.path_count }} file(s) with this extension:"
           for i in ${{ steps.pl.outputs.paths }}; do
           echo $i
@@ -67,6 +68,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create-new-release.outputs.upload_url }}
-          asset_path: ./DiscordBot.jar
+          asset_path: ${GITHUB_WORKSPACE}/DiscordBot.jar
           asset_name: DiscordBot-v${{ github.run_number }}.jar
           asset_content_type: application/java-archive
