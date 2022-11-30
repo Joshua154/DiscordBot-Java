@@ -22,8 +22,14 @@ jobs:
             USERNAME: ${{secrets.USERNAME}}
             TOKEN: ${{secrets.TOKEN}}
             RELEASE_VERSION: ${{github.run_number}}
-      -   name: Upload artifacts
-          uses: actions/upload-artifact@v3
-          with:
-            name: build-artifacts
-            path: build/libs/DiscordBot.jar
+            
+            
+  create-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "./build/libs/DiscordBot.jar"
