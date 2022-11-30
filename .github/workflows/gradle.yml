@@ -25,27 +25,15 @@ jobs:
                 uses: gradle/gradle-build-action@v2
             -   name: Run build with Gradle Wrapper
                 run: gradle build
-            -   name: version
-                run: echo "::set-output name=version::$(./bin/azblogfilter --version)"
-                id: version
-            -   name: release
-                uses: actions/create-release@v1
-                id: create_release
-                with:
-                  draft: false
-                  prerelease: false
-                  release_name: ${{ steps.version.outputs.version }}
-                  tag_name: ${{ github.ref }}
                 env:
-                  GITHUB_TOKEN: ${{ github.token }}
-                  
-                  
-            - name: upload artifact
-              uses: actions/upload-release-asset@v1
-              env:
-                GITHUB_TOKEN: ${{ github.token }}
-              with:
-                upload_url: ${{ steps.create_release.outputs.upload_url }}
-                asset_path: ./build/libs/DiscordBot.jar
-                asset_name: DiscordBot.jar
-                asset_content_type: application/java-archive
+                    USERNAME: ${{secrets.USERNAME}}
+                    TOKEN: ${{secrets.TOKEN}}
+                    RELEASE_VERSION: ${{env.RELEASE_VERSION}}
+            -   name: Upload artifacts
+                uses: actions/upload-artifact@v3
+                with:
+                    name: build-artifacts
+                    path: |
+                        build/libs/*.jar
+                        build/reports/tests/test/index.html
+                        build/reports/jacoco/test/html/index.html
