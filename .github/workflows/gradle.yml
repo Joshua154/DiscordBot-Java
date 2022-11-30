@@ -35,4 +35,4 @@ jobs:
       with:
           name: build-artifacts
           path: |
-              ./*
+              ./home/runner/work/DiscordBot-Java/DiscordBot-Java/build/libs/DiscordBot.jar
