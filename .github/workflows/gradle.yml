@@ -50,6 +50,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create-new.release.outputs.upload_url }}
-          asset_path: ./DiscordBot.jar
+          asset_path: ./build/libs/DiscordBot.jar
           asset_name: DiscordBot-v${{ github.run_number }}.jar
-          asset_content-type: application/java-archive
+          asset_content_type: application/java-archive
