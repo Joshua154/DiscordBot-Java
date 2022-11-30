@@ -43,3 +43,13 @@ jobs:
         with:
           tag_name: ${{ github.run_number }}
           release_name: Release ${{ github.run_number }}
+          
+      - name: Upload release asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create-new.release.outputs.upload_url }}
+          asset_path: ./DiscordBot.jar
+          asset_name: DiscordBot-v${{ github.run_number }}.jar
+          asset_content-type: application/jar
