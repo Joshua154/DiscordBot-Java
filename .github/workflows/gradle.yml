@@ -49,7 +49,7 @@ jobs:
         id: pl
         uses: Rishabh510/Path-lister-action@master
         with:
-          path: ".github/"
+          path: "./"
           type: ".jar"
 
       - name: Output results
