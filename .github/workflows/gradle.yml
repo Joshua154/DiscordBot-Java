@@ -28,6 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    needs: build-gradle-project
     steps:
     - uses: actions/checkout@v2
     - uses: ncipollo/release-action@v1
