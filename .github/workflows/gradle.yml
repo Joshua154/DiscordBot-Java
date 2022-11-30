@@ -52,4 +52,4 @@ jobs:
           upload_url: ${{ steps.create-new.release.outputs.upload_url }}
           asset_path: ./DiscordBot.jar
           asset_name: DiscordBot-v${{ github.run_number }}.jar
-          asset_content-type: application/jar
+          asset_content-type: application/java-archive
