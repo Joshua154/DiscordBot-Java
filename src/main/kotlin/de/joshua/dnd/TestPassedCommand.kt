@@ -27,7 +27,7 @@ class TestPassedCommand : SlashCommand {
         val emp = event.getOption("private") != null && event.getOption("private")?.asBoolean!!
 
         if (event.getOption("times") != null && event.getOption("times")?.asInt!! > 1) {
-            val rolls = List(event.getOption("times")?.asInt!!) { i -> Dice.rollDice(100) }
+            val rolls = List(event.getOption("times")?.asInt!!) { Dice.rollDice(100) }
 
             val embed = EmbedBuilder()
                 .setAuthor(
