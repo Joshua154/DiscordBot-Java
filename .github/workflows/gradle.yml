@@ -9,9 +9,8 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]         
+    tags:
+      - '*'        
               
               
 jobs:
@@ -26,12 +25,27 @@ jobs:
                 uses: gradle/gradle-build-action@v2
             -   name: Run build with Gradle Wrapper
                 run: gradle build
-                env:
-                    USERNAME: ${{secrets.USERNAME}}
-                    TOKEN: ${{secrets.TOKEN}}
-                    RELEASE_VERSION: ${{github.run_number}}
-            -   name: Upload artifacts
-                uses: actions/upload-artifact@v3
+            -   name: version
+                run: echo "::set-output name=version::$(./bin/azblogfilter --version)"
+                id: version
+            -   name: release
+                uses: actions/create-release@v1
+                id: create_release
                 with:
-                    name: build-artifacts
-                    path: build/libs/DiscordBot.jar
+                  draft: false
+                  prerelease: false
+                  release_name: ${{ steps.version.outputs.version }}
+                  tag_name: ${{ github.ref }}
+                env:
+                  GITHUB_TOKEN: ${{ github.token }}
+                  
+                  
+            - name: upload artifact
+              uses: actions/upload-release-asset@v1
+              env:
+                GITHUB_TOKEN: ${{ github.token }}
+              with:
+                upload_url: ${{ steps.create_release.outputs.upload_url }}
+                asset_path: ./build/libs/DiscordBot.jar
+                asset_name: DiscordBot.jar
+                asset_content_type: application/java-archive
