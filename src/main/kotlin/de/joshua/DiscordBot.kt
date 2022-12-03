@@ -37,8 +37,8 @@ class DiscordBot {
 
         val guild = jda.guilds.filter { it.id == "777522801368236043" }[0]
 
-        commandHandler.sendCommands(guild)
-        // commandHandler.sendCommands(jda.guilds)
+        //commandHandler.sendCommands(guild)
+        commandHandler.sendCommands(jda.guilds)
         buttonHandler.registerButtons()
         modalHandler.registerModals()
         menuHandler.registerEntityMenus()
