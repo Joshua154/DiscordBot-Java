@@ -82,6 +82,8 @@ class Dice {
                     break
                 }
             }
+            if(index == -1) index = 0
+
 
 
             return CritEntry(location, intensity.toString(), result[index].description, result[index].wounds, result[index].additionalEffects)
