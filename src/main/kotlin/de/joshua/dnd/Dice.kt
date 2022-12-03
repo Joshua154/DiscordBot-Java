@@ -61,7 +61,7 @@ class Dice {
 
 
             val klaxon = Klaxon()
-            val result = arrayListOf<TableEntry>()
+            val result = arrayListOf<CritTableEntry>()
             JsonReader(StringReader(file.readText())).use { reader ->
                 reader.beginArray {
                     while (reader.hasNext()) {
@@ -69,7 +69,7 @@ class Dice {
                         if (person != null) {
                             result.add(person)
                         }*/
-                        klaxon.parse<TableEntry>(reader)?.let { result.add(it) }
+                        klaxon.parse<CritTableEntry>(reader)?.let { result.add(it) }
                     }
                 }
             }
@@ -137,7 +137,7 @@ fun getBodyPartNumber(bodyPart: String): Int {
 }
 
 
-data class TableEntry(
+data class CritTableEntry(
     val max: Int,
     val description: String,
     val wounds: String,

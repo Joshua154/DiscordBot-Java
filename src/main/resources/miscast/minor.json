@@ -1,0 +1,82 @@
+[
+  {
+    "max": 5,
+    "description": "**Witchsign:**\nthe next living creature born within 1 mile is mutated."
+  },
+  {
+    "max": 10,
+    "description": "**Soured Milk:**\nAll milk within 1d100 yards goes sour instantly."
+  },
+  {
+    "max": 15,
+    "description": "**Blight:**\nWillpower Bonus fields within Willpower Bonus miles suffer a blight, and all crops rot overnight."
+  },
+  {
+    "max": 20,
+    "description": "**Soulwax:**\nYour ears clog instantly with a thick wax. Gain 1 Deafened Condition, which is not removed until someone cleans them for you (with a successful use of the Heal Skill)."
+  },
+  {
+    "max": 25,
+    "description": "**Witchlight:**\nYou glow with an eerie light related to your Lore, emitting as much light as a large bonfire, which lasts for 1d10 Rounds."
+  },
+  {
+    "max": 30,
+    "description": "**Fell Whispers:**\nPass a Routine (+20) Willpower Test or gain 1 Corruption point."
+  },
+  {
+    "max": 35,
+    "description": "**Rupture:**\nYour nose, eyes, and ears bleed profusely. Gain 1d10 Bleeding Conditions."
+  },
+  {
+    "max": 40,
+    "description": "**Soulquake:**\nGain the Prone Condition."
+  },
+  {
+    "max": 45,
+    "description": "**Unfasten:**\nOn your person, every buckle unfastens, and every lace unties, which may cause belts to fall, pouches to open, bags to fall, and armour to slip."
+  },
+  {
+    "max": 50,
+    "description": "**Wayward Garb:**\nyour clothes seem to writhe with a mind of their own. Receive 1 Entangled Condition with a Strength of 1d10x5 to resist."
+  },
+  {
+    "max": 55,
+    "description": "**Curse of Temperance:**\nAll alcohol within 1d100 yards goes bad, tasting bitter and foul."
+  },
+  {
+    "max": 60,
+    "description": "**Souldrain:**\nGain 1 Fatigued Condition, which remains for 1d10 hours."
+  },
+  {
+    "max": 65,
+    "description": "**Driven to Distraction:**\nIf engaged in combat, gain the Surprised Condition. Otherwise, you are completely startled, your heart racing, and unable to concentrate for a few moments."
+  },
+  {
+    "max": 70,
+    "description": "**Unholy Visions:**\nFleeting visions of profane and unholy acts harass you. Receive a Blinded Condition; pass a Challenging (+0) Cool Test or gain another."
+  },
+  {
+    "max": 75,
+    "description": "**Cloying Tongue:**\nAll Language Tests (including Casting Tests) suffer a -10 penalty for 1d10 Rounds."
+  },
+  {
+    "max": 80,
+    "description": "**The Horror!:**\nPass a Hard (-20) Cool Test or gain 1 Broken Condition."
+  },
+  {
+    "max": 85,
+    "description": "**Curse of Corruption:**\nGain 1 Corruption point."
+  },
+  {
+    "max": 90,
+    "description": "**Double Trouble:**\nThe effect of the spell you cast occurs elsewhere within 1d10 miles. At the GM's discretion, where possible it should have consequences."
+  },
+  {
+    "max": 95,
+    "description": "**Multiplying Misfortune:**\nRoll twice on this table, re rolling any results between 91-100."
+  },
+  {
+    "max": 100,
+    "description": "**Cascading Chaos:**\nRoll again on the Major Miscast Table."
+  }
+]
