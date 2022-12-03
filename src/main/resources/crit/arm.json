@@ -1,0 +1,122 @@
+[
+  {
+    "max": 10,
+    "description": "Jarred Arm",
+    "wounds": "1",
+    "additionalEffects": "Your arm is jarred in the attack. **Drop whatever was held in that hand**."
+  },
+  {
+    "max": 20,
+    "description": "Minor cut",
+    "wounds": "1",
+    "additionalEffects": "Gain a **Bleeding Condition** as your upper arm is cut badly."
+  },
+  {
+    "max": 25,
+    "description": "Sprain",
+    "wounds": "1",
+    "additionalEffects": "You sprain your arm, suffering a **Torn Muscle (Minor) injury**."
+  },
+  {
+    "max": 30,
+    "description": "Badly Jarred Arm",
+    "wounds": "2",
+    "additionalEffects": "Your arm is badly jarred in the attack. **Drop whatever was held** in that hand, which is useless for **1d10** - **Toughness Bonus Rounds (minimum 1)**. For this time, treat the hand as lost (see Amputated Parts)."
+  },
+  {
+    "max": 35,
+    "description": "Torn Muscles",
+    "wounds": "2",
+    "additionalEffects": "The blow slams into your forearm. Gain a **Bleeding Condition** and a **Torn Muscle (Minor) injury**."
+  },
+  {
+    "max": 40,
+    "description": "Bleeding Hand",
+    "wounds": "2",
+    "additionalEffects": "Your hand is cut badly, making your grip slippery. Take **1 Bleeding Condition**. While suffering from that Bleeding Condition, make an Average **(+20) Dexterity Test** before taking ny Action that requires something being held in that hand; if you fail, the item slips from your grip."
+  },
+  {
+    "max": 45,
+    "description": "Wrenched Arm",
+    "wounds": "2",
+    "additionalEffects": "Your arm is almost pulled from its socket. **Drop whatever is held** in the associated hand. The arm is **useless** for **1d10 Rounds** (see Amputated Parts)."
+  },
+  {
+    "max": 50,
+    "description": "Gaping Wound",
+    "wounds": "3",
+    "additionalEffects": "The blow opens a deep, gaping wound. Gain **2 Bleeding Conditions**. **Until** you receive **Surgery** to stitch up the cut, any **associated Arm Damage** you receive will also inflict **1 Bleeding Condition** as the wound reopens."
+  },
+  {
+    "max": 55,
+    "description": "Clean Break",
+    "wounds": "3",
+    "additionalEffects": "An audible crack resounds as the blow strikes your arm. **Drop whatever was held** in the associated hand and gain a **Broken Bone (Minor) injury**. Pass a **Difficult (-10) Endurance Test** or gain a **Stunned Condition**."
+  },
+  {
+    "max": 60,
+    "description": "Ruptured Ligament",
+    "wounds": "3",
+    "additionalEffects": "You **immediately drop whatever was held** in that hand. Suffer a **Torn Muscle (Major) injury**."
+  },
+  {
+    "max": 65,
+    "description": "Deep Cut",
+    "wounds": "3",
+    "additionalEffects": "Gain **2 Bleeding Conditions** as your arm is mangled. Gain **1 Stunned Condition** and suffer a **Torn Muscle (Minor) injury**. Take a Hard **(-20) Endurance Test** or gain the **Unconscious Condition**."
+  },
+  {
+    "max": 70,
+    "description": "Damaged Artery",
+    "wounds": "4",
+    "additionalEffects": "Gain **4 Bleeding Conditions**. Until you **receive Surgery**, every time you **take Damage** to this Arm Hit Location gain **2 Bleeding Conditions**."
+  },
+  {
+    "max": 75,
+    "description": "Crushed Elbow",
+    "wounds": "4",
+    "additionalEffects": "The blow crushes your elbow, splintering bone and cartilage. You immediately **drop whatever was held** in that hand and gain a **Broken Bone (Major) injury**."
+  },
+  {
+    "max": 80,
+    "description": "Dislocated Shoulder",
+    "wounds": "4",
+    "additionalEffects": "Your arm is wrenched out of its socket. Pass a Hard **(-20) Endurance Test** or gain the **Stunned** and **Prone Condition**. **Drop whatever is held** in that hand: the arm is **useless and counts as lost** (see Amputated Part). ain **1 Stunned Condition** until you receive **Medical Attention**. After this initial Medical Attention, an extended Average **(+20) Heal Test** needing **6 SL** is required to reset the arm, at which point you regain its use. Tests made using this arm suffer a **-10 penalty** for **1d10 days**."
+  },
+  {
+    "max": 85,
+    "description": "Severed Finger",
+    "wounds": "4",
+    "additionalEffects": "You gape in horror as a finger flies - Amputation (Average). Gain a **Bleeding condition**."
+  },
+  {
+    "max": 90,
+    "description": "Cleft Hand",
+    "wounds": "5",
+    "additionalEffects": "Your hand splays open from the blow. Lose **1 finger** -Amputation (Difficult). Gain **2 Bleeding** and **1 Stunned Condition**. For every succeeding Round in which you don't receive Medical Attention, you lose another finger as the wound tears; if you run out of fingers, you lose the hand - Amputation (Difficult)."
+  },
+  {
+    "max": 93,
+    "description": "Mauled Bicep",
+    "wounds": "5",
+    "additionalEffects": "The blow almost separates bicep and tendon from bone, leaving an ugly wound that sprays blood over you and your opponent. You automatically drop anything held in the associated hand nd suffers a **Torn Muscle (Major) injury** and **2 Bleeding** and **1 Stunned Condition**."
+  },
+  {
+    "max": 96,
+    "description": "Mangled Hand",
+    "wounds": "5",
+    "additionalEffects": "Your hand is left a mauled, bleeding mess. You lose your hand - **Amputation (Hard)**. Gain **2 Bleeding Condition**. Take a Hard **(-20) Endurance Test** or gain the **Stunned** and **Prone Conditions**."
+  },
+  {
+    "max": 99,
+    "description": "Sliced Tendons",
+    "wounds": "5",
+    "additionalEffects": "Your tendons are cut by the blow, leaving your arm hanging useless - **Amputation (Very Hard)**. Gain **3 Bleeding**, **1 Prone**, and **1 Stunned Condition**. Pass a Hard **(-20) Endurance Test** or gain the **Unconscious Condition**."
+  },
+  {
+    "max": 100,
+    "description": "Decapitated",
+    "wounds": "Death",
+    "additionalEffects": "Your arm is severed, spraying arterial blood **1d10 feet in a random direction** (see Scatter), before the blow follows through to your chest."
+  }
+]
