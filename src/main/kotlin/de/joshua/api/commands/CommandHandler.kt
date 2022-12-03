@@ -54,17 +54,17 @@ class CommandHandler() : ListenerAdapter() {
 
         slashCommands.forEach {
             updateCommands.addCommands(it.commandData()).queueAfter(1, TimeUnit.SECONDS)
-            println(it.commandData().name + " on " + guild.name)
+            //println(it.commandData().name + " on " + guild.name)
         }
 
         userContext.forEach {
             updateCommands.addCommands(it.commandData()).queueAfter(1, TimeUnit.SECONDS)
-            println(it.commandData().name + " on " + guild.name)
+            //println(it.commandData().name + " on " + guild.name)
         }
 
         messageContext.forEach {
             updateCommands.addCommands(it.commandData()).queueAfter(1, TimeUnit.SECONDS)
-            println(it.commandData().name + " on " + guild.name)
+            //println(it.commandData().name + " on " + guild.name)
         }
 
         updateCommands.queueAfter(5, TimeUnit.SECONDS)
@@ -79,17 +79,17 @@ class CommandHandler() : ListenerAdapter() {
 
             slashCommands.forEach {
                 updateCommands.addCommands(it.commandData()).queueAfter(1, TimeUnit.SECONDS)
-                println(it.commandData().name + " on " + guild.name)
+                //println(it.commandData().name + " on " + guild.name)
             }
 
             userContext.forEach {
                 updateCommands.addCommands(it.commandData()).queueAfter(1, TimeUnit.SECONDS)
-                println(it.commandData().name + " on " + guild.name)
+                //println(it.commandData().name + " on " + guild.name)
             }
 
             messageContext.forEach {
                 updateCommands.addCommands(it.commandData()).queueAfter(1, TimeUnit.SECONDS)
-                println(it.commandData().name + " on " + guild.name)
+                //println(it.commandData().name + " on " + guild.name)
             }
 
             updateCommands.queueAfter(5, TimeUnit.SECONDS)

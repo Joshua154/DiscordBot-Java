@@ -7,11 +7,10 @@ import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEve
 import net.dv8tion.jda.api.interactions.commands.OptionType
 import net.dv8tion.jda.api.interactions.commands.build.OptionData
 import net.dv8tion.jda.internal.interactions.CommandDataImpl
-import java.awt.Color
 import java.time.Instant
 
 @SlashCommands
-class TestPassedCommand : SlashCommand {
+class DiceCommand : SlashCommand {
     override fun commandData(): CommandDataImpl {
         return CommandDataImpl("dice", "roles a d100 Test")
             .addOptions(
@@ -22,12 +21,15 @@ class TestPassedCommand : SlashCommand {
     }
 
     override fun onExecute(event: SlashCommandInteractionEvent) {
-        val user = event.user
+        val ephemeral = event.getOption("private") != null && event.getOption("private")?.asBoolean!!
 
-        val emp = event.getOption("private") != null && event.getOption("private")?.asBoolean!!
+        var user = event.user
+        if(event.getOption("user") != null){
+            user = event.getOption("user")?.asUser!!
+        }
 
         if (event.getOption("times") != null && event.getOption("times")?.asInt!! > 1) {
-            val rolls = List(event.getOption("times")?.asInt!!) { Dice.rollDice(100) }
+            val rolls = List(event.getOption("times")?.asInt!!) { Dice.rollDice() }
 
             val embed = EmbedBuilder()
                 .setAuthor(
@@ -37,9 +39,9 @@ class TestPassedCommand : SlashCommand {
                 )
                 .setTimestamp(Instant.now())
                 .setTitle("Rolled ${rolls.size} times")
-                .setDescription(rolls.joinToString { "\n" + (it + 1).toString() })
+                .setDescription(rolls.joinToString { "\n" + it.toString() })
 
-            event.replyEmbeds(embed.build()).setEphemeral(emp).queue()
+            event.replyEmbeds(embed.build()).setEphemeral(ephemeral).setActionRow(Dice.getActionRow()).queue()
         } else {
             val roll = Dice.rollDice(100)
 
@@ -49,14 +51,10 @@ class TestPassedCommand : SlashCommand {
                     null,
                     user.avatarUrl
                 )
-                .setTitle((roll + 1).toString())
+                .setTitle(roll.toString())
                 .setTimestamp(Instant.now())
 
-            if (Dice.isCrit(roll)) {
-                embed.setColor(Color.RED)
-            }
-
-            event.replyEmbeds(embed.build()).setEphemeral(emp).queue()
+            event.replyEmbeds(embed.build()).setEphemeral(ephemeral).setActionRow(Dice.getActionRow()).queue()
         }
     }
 }
