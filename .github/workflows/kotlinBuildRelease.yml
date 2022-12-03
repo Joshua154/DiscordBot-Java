@@ -9,6 +9,8 @@ on:
 
 jobs:
   build-gradle-project:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       -   name: Checkout project sources
@@ -23,20 +25,11 @@ jobs:
             USERNAME: ${{secrets.USERNAME}}
             TOKEN: ${{secrets.TOKEN}}
             RELEASE_VERSION: ${{github.run_number}}
-
-
-  update-release:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    needs: build-gradle-project
-    steps:
-    - uses: actions/checkout@v2
-        
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v3
-      with:
-          name: build-artifacts
-          path: build/libs/*.jar
+            
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+            name: build-artifacts
+            path: build/libs/*.jar
 
 
