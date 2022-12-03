@@ -25,15 +25,23 @@ jobs:
             RELEASE_VERSION: ${{github.run_number}}
 
 
-  create-release:
+  update-release:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     needs: build-gradle-project
     steps:
-      - name: Update release
-        uses: johnwbyrd/update-release@v1.0.0
-        with:
-          token: ${{ secrets.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 }}
-          asset: ./build/libs/DiscordBot.jar
+    - name: Set enviroment for github-release
+      run: |
+        echo ::set-env name=RELEASE_TAG::"latest"
+        echo ::set-env name=RELEASE_NAME::"$GITHUB_WORKFLOW"
+    - uses: actions/checkout@v2
+
+    - uses: meeDamian/github-release@2.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag: ${{ env.RELEASE_TAG }}
+        name: ${{ env.RELEASE_NAME }}
+        files: ./build/libs/DiscordBot.jar
+          
       
