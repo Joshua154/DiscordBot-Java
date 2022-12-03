@@ -35,7 +35,7 @@ class DiscordBot {
 
         val jda = builder.build().awaitReady()
 
-        val guild = jda.guilds.filter { it.id == "639126503409319946" }[0]
+        val guild = jda.guilds.filter { it.id == "777522801368236043" }[0]
 
         commandHandler.sendCommands(guild)
         // commandHandler.sendCommands(jda.guilds)
@@ -47,3 +47,4 @@ class DiscordBot {
         println("Bot is running")
     }
 }
+

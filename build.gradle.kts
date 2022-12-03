@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.7.21"
+    kotlin("plugin.serialization") version "1.4.20"
     id("com.github.johnrengelman.shadow") version("7.1.2")
     application
 }
@@ -15,7 +16,7 @@ repositories {
 dependencies {
     implementation("net.dv8tion:JDA:5.0.0-alpha.22")
     implementation("org.reflections:reflections:0.10.2")
-    implementation("mysql:mysql-connector-java:8.0.30")
+    implementation("com.beust:klaxon:5.5")
 }
 
 application {
