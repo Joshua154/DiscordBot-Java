@@ -31,10 +31,6 @@ jobs:
       contents: write
     needs: build-gradle-project
     steps:
-    - name: Set enviroment for github-release
-      run: |
-        echo ::set-env name=RELEASE_TAG::"latest"
-        echo ::set-env name=RELEASE_NAME::"$GITHUB_WORKFLOW"
     - uses: actions/checkout@v2
         
     - name: Upload artifacts
