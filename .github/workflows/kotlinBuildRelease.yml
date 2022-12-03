@@ -31,19 +31,9 @@ jobs:
       contents: write
     needs: build-gradle-project
     steps:
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update release
+        uses: johnwbyrd/update-release@v1.0.0
         with:
-          tag_name: v${{ github.run_number }}
-          release_name: Release ${{ github.run_number }}
-          body: |
-            ${{ steps.Changelog.outputs.changelog }}
-          draft: false
-          prerelease: false
-      - uses: actions/checkout@v2
-      - uses: ncipollo/release-action@v1
-        with:
-          artifacts: "./build/libs/DiscordBot.jar"
+          token: ${{ secrets.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 }}
+          asset: ./build/libs/DiscordBot.jar
+      
