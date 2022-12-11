@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     kotlin("jvm") version "1.7.21"
     kotlin("plugin.serialization") version "1.4.20"
@@ -17,6 +19,7 @@ dependencies {
     implementation("net.dv8tion:JDA:5.0.0-alpha.22")
     implementation("org.reflections:reflections:0.10.2")
     implementation("com.beust:klaxon:5.5")
+    implementation(kotlin("stdlib-jdk8"))
 }
 
 application {
@@ -39,4 +42,12 @@ tasks.withType(Jar::class) {
     from({
         configurations.runtimeClasspath.get().filter { it.name.endsWith("jar") }.map { zipTree(it) }
     })
+}
+val compileKotlin: KotlinCompile by tasks
+compileKotlin.kotlinOptions {
+    jvmTarget = "1.8"
+}
+val compileTestKotlin: KotlinCompile by tasks
+compileTestKotlin.kotlinOptions {
+    jvmTarget = "1.8"
 }
