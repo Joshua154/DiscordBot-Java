@@ -19,8 +19,10 @@ class DiscordBot {
 
     init {
         println("Starting Bot ...")
+        val botToken: String = System.getenv("discordBotToken")
+
         val builder =
-            JDABuilder.createDefault("NzA0NjY0MTc2MzUzNjA3NzIx.G-7eMk.zq5jsNzXYJge1BXRI759xvWNfmDdF5UbrfrZU0")
+            JDABuilder.createDefault(botToken)
         builder.enableIntents(GatewayIntent.GUILD_MEMBERS, GatewayIntent.GUILD_PRESENCES, GatewayIntent.GUILD_VOICE_STATES, GatewayIntent.SCHEDULED_EVENTS)
         builder.enableCache(CacheFlag.ONLINE_STATUS, CacheFlag.SCHEDULED_EVENTS)
 
