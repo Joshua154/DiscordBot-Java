@@ -22,10 +22,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: shadow-jar
-          path: ./*.jar
-      - name: "Build & test"
-        run: |
-          echo "done!"
+          path: build/libs/*.jar
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
@@ -34,5 +31,4 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-            LICENSE.txt
-            *.jar
+            build/libs/*.jar
