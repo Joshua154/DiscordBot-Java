@@ -23,6 +23,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
         with:
+          gradle-version: 7
           arguments: build
 
       - uses: "marvinpinto/action-automatic-releases@latest"
