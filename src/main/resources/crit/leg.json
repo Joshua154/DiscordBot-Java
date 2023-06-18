@@ -2,121 +2,121 @@
   {
     "max": 10,
     "description": "Stubbed Toe",
-    "wounds": "1",
-    "additionalEffects": "In the scuffle, you stub your toe. Pass a Routine **(+20) Endurance Test** or suffer **-10 on Agility Tests** until the **end of the next turn**."
+    "wounds": "T",
+    "additionalEffects": "Pass an Average (+20) Endurance Test or suffer -10 on Agility Tests until the end of the next turn."
   },
   {
     "max": 20,
-    "description": "Twisted Ankle",
-    "wounds": "1",
-    "additionalEffects": "You go over your ankle, hurting it. **Agility Tests** suffer a **-10 penalty** for **1d10 rounds**."
+    "description": "Lost Footing",
+    "wounds": "T",
+    "additionalEffects": "Pass a Challenging (+0) Athletics Test or gain the Prone Condition."
   },
   {
     "max": 25,
-    "description": "Minor Cut",
+    "description": "Twisted Ankle",
     "wounds": "1",
-    "additionalEffects": "Gain **1 Bleeding Condition**."
-  },
-  {
-    "max": 30,
-    "description": "Lost Footing",
-    "wounds": "1",
-    "additionalEffects": "In the scuffle you lose your footing. Pass a Challenging **(+0) Endurance Test** or gain the **Prone Condition**."
-  },
-  {
-    "max": 35,
-    "description": "Thigh Strike",
-    "wounds": "2",
-    "additionalEffects": "A painful blow slams into your upper thigh. Gain a **Bleeding Condition** and take an Average **(+20) Endurance Test** or stumble, gaining the **Prone Condition**."
+    "additionalEffects": "Agility Tests suffer a -10 penalty for 1d10 rounds."
   },
   {
     "max": 40,
-    "description": "Sprained Ankle",
-    "wounds": "2",
-    "additionalEffects": "You sprain your ankle, giving you a **Torn Muscle (Minor) injury**."
+    "description": "Minor Cut",
+    "wounds": "1",
+    "additionalEffects": "Gain 1 Bleeding Condition."
   },
   {
     "max": 45,
-    "description": "Twisted Knee",
-    "wounds": "2",
-    "additionalEffects": "You twist your knee too far. **Agility Tests** suffer a **-20 penalty** for **1d10 rounds**."
+    "description": "Thigh Strike",
+    "wounds": "1",
+    "additionalEffects": "A blow slams into your upper thigh. Gain a Bleeding Condition and take an Average (+20) Endurance Test or gain the Prone Condition."
   },
   {
     "max": 50,
-    "description": "Badly Cut Toe",
-    "wounds": "2",
-    "additionalEffects": "Gain **1 Bleeding Condition**. After the encounter, make a Challenging **(+0) Endurance Test**. If you fail, lose **1 toe - Amputation (Average)**."
+    "description": "Sprained Ankle",
+    "wounds": "1",
+    "additionalEffects": "Gain a Torn Muscle (Minor) injury."
   },
   {
     "max": 55,
-    "description": "Bad Cut",
-    "wounds": "3",
-    "additionalEffects": "Gain **2 Bleeding conditions** as a deep wound opens up your shin. Pass a Challenging **(+0) Endurance Test** or gain the **Prone Condition**."
+    "description": "Twisted Knee",
+    "wounds": "2",
+    "additionalEffects": "You twist your knee too far. Agility Tests suffer a -20 penalty for 1d10 Rounds."
   },
   {
     "max": 60,
-    "description": "Badly Twisted Knee",
-    "wounds": "3",
-    "additionalEffects": "You badly twist your knee trying to avoid your opponent. Gain a **Torn Muscle (Major) injury**."
+    "description": "Badly Cut Toe",
+    "wounds": "2",
+    "additionalEffects": "Gain 1 Bleeding Condition. After the encounter, make a Challenging (+0) Endurance Test. If you fail, lose 1 toe - Amputation (Average)."
   },
   {
     "max": 65,
-    "description": "Hacked Leg",
-    "wounds": "3",
-    "additionalEffects": "A cut bites down into the hip. Gain **1 Prone** and **2 Bleeding Conditions**, and suffer a **Broken Bone (Minor) injury**. Further, take a Hard **(-20) Endurance Test** or also gain a **Stunned condition** from the pain."
+    "description": "Bad Cut",
+    "wounds": "2",
+    "additionalEffects": "Gain 2 Bleeding Conditions. Pass a Challenging (+0) Endurance Test or gain the Prone Condition."
   },
   {
     "max": 70,
-    "description": "Torn Thigh",
-    "wounds": "3",
-    "additionalEffects": "Gain **3 Bleeding Conditions** as the weapon opens up your upper thigh. Pass a Challenging **(+0) Endurance Test** or gain the **Prone Condition**. Until you **receive Surgery** to stitch up the wound, each time you receive **Damage to this Leg**, also receive **1 Bleeding Condition**."
+    "description": "Badly Twisted Knee",
+    "wounds": "2",
+    "additionalEffects": "Gain a Torn Muscle (Major) injury."
   },
   {
     "max": 75,
-    "description": "Ruptured Tendon",
-    "wounds": "4",
-    "additionalEffects": "Gain a **Prone** and **Stunned Condition** as one of your tendons tears badly. Pass a Hard **(-20) Endurance Test** or gain the **Unconscious Condition**. Your leg is uscless (see Amputated Parts). Suffer a **Torn Muscle (Major) injury**."
+    "description": "Hacked Leg",
+    "wounds": "3",
+    "additionalEffects": "Gain 1 Prone and 2 Bleeding Conditions, and suffer a Broken Bone (Minor) injury."
   },
   {
     "max": 80,
-    "description": "Carved Shin",
-    "wounds": "4",
-    "additionalEffects": "The weapon drives clean through your leg by the knee, slicing into bone and through tendons. Gain a **Stunned** and **Prone Condition**. Further, suffer a **Torn Muscle (Major)** and **Broken Bone (Minor) injury**."
+    "description": "Torn Thigh",
+    "wounds": "3",
+    "additionalEffects": "Gain 3 Bleeding Conditions. Until you receive Surgery to stitch the cut, any associated Leg Damage you receive inflicts an additional Bleeding Condition."
   },
   {
     "max": 85,
-    "description": "Broken Knee",
-    "wounds": "4",
-    "additionalEffects": "The blow hacks into your kneecap, shattering it into several pieces. You gain **1 Bleeding**, **1 Prone**, and **1 Stunned Condition**, and a **Broken Bone (Major) Injury** as you fall to the ground, clutching your ruined leg."
+    "description": "Ruptured Tendon",
+    "wounds": "3",
+    "additionalEffects": "Gain a Prone and Stunned Condition. Pass a Hard (-20) Endurance Test or gain the Unconscious Condition. Your leg is useless (see Amputated Parts). Suffer a Torn Muscle (Major) injury."
   },
   {
     "max": 90,
+    "description": "Cracked Shin",
+    "wounds": "4",
+    "additionalEffects": "Gain a Stunned and Prone Condition. Further, suffer a Torn Muscle (Major) and Broken Bone (Minor) injury."
+  },
+  {
+    "max": 95,
+    "description": "Broken Knee",
+    "wounds": "4",
+    "additionalEffects": "You gain 1 Bleeding, 1 Prone, and 1 Stunned Condition, and a Broken Bone (Major) injury."
+  },
+  {
+    "max": 105,
     "description": "Dislocated Knee",
     "wounds": "4",
-    "additionalEffects": "Your knee is wrenched out of its socket. Gain the Prone Condition. Pass a Hard **(-20) Endurance Test**, or gain the **Stunned Condition**, which is not removed until you **receive Medical Attention**. After this initial Medical Attention, an Extended Average **(+20) Heal Test** needing **6 SL** is required to reset the knee at which point you regain its use. **Movement is halved**, and Tests made **using this leg** suffer a **-10 penalty** for **1d10 days**."
+    "additionalEffects": "Gain the Prone Condition. Pass a Hard (-20) Endurance Test, or gain the Stunned Condition, which is not removed until you receive Medical Attention. After this initial Medical Attention, an Extended Average (+20) Heal Test reaching 6 SL resets the knee. After this, Movement is halved and Tests made using the leg suffer a -10 penalty for 1d10 days."
   },
   {
-    "max": 93,
+    "max": 115,
     "description": "Crushed Foot",
-    "wounds": "5",
-    "additionalEffects": "The blow crushes your foot. Make an Average **(+20) Endurance Test**. if you fail, gain the **Prone condition** and lose **1 toe**, plus **1 additional toe** for each **SL below 0** - **Amputation (Average)**. Gain **2 Bleeding Conditions**. If you don't **receive Surgery** within **1d10 days**, you will lose the foot entirely."
+    "wounds": "4",
+    "additionalEffects": "Make an Average (+20) Endurance Test. if you fail, gain the Prone Condition and lose 1 toe, plus 1 additional toe for each SL below 0 - Amputation (Average). Gain 2 Bleeding Conditions. If you don't receive Surgery within 1d10 days, you lose the foot."
   },
   {
-    "max": 96,
+    "max": 120,
     "description": "Severed Foot",
     "wounds": "5",
-    "additionalEffects": "Your foot is severed at the ankle and lands **1d10 feet away** in a **random direction** - **Amputation (Hard)** (see Seatter). You gain **3 Bleeding**, **2 Stunned**, and **1 Prone Condition**."
+    "additionalEffects": "Your foot is severed- Amputation (Hard). You gain 3 Bleeding, 2 Stunned, and 1 Prone Condition."
   },
   {
-    "max": 99,
+    "max": 125,
     "description": "Cut Tendon",
     "wounds": "5",
-    "additionalEffects": "A major tendon at the back of your leg is cut, causing you to scream out in pain as your leg collapses. Gain **2 Bleeding**, **2 Stunned**, and **1 Prone Condition** and look on in horror as your leg never works again - **Amputation (Very Hard)**."
+    "additionalEffects": "Your leg collapses. Gain 2 Bleeding, 2 Stunned, and 1 Prone Condition and your leg never works again - Amputation (Very Hard)."
   },
   {
-    "max": 100,
+    "max": 500,
     "description": "Shattered Pelvis",
     "wounds": "Death",
-    "additionalEffects": "The blow shatters your pelvis, severing one leg then driving through to the next. You die instantly from traumatic shock."
+    "additionalEffects": "The blow shatters your pelvis, severing a leg. You die instantly from traumatic shock."
   }
 ]

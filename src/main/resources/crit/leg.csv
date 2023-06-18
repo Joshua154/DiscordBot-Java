@@ -1,0 +1,21 @@
+max,description,wounds,additionalEffects
+10,Stubbed Toe,1,Pass an Average (+20) Endurance Test or suffer -10 on Agility Tests until the end of the next turn.
+20,Lost Footing,1,Pass a Challenging (+0) Athletics Test or gain the Prone Condition.
+25,Twisted Ankle,1,Agility Tests suffer a -10 penalty for 1d10 rounds.
+40,Minor Cut,1,Gain 1 Bleeding Condition.
+45,Thigh Strike,1,A blow slams into your upper thigh. Gain a Bleeding Condition and take an Average (+20) Endurance Test or gain the Prone Condition.
+50,Sprained Ankle,1,Gain a Torn Muscle (Minor) injury.
+55,Twisted Knee,2,You twist your knee too far. Agility Tests suffer a -20 penalty for 1d10 Rounds.
+60,Badly Cut Toe,2,"Gain 1 Bleeding Condition. After the encounter, make a Challenging (+0) Endurance Test. If you fail, lose 1 toe - Amputation (Average)."
+65,Bad Cut,2,Gain 2 Bleeding Conditions. Pass a Challenging (+0) Endurance Test or gain the Prone Condition.
+70,Badly Twisted Knee,2,Gain a Torn Muscle (Major) injury.
+75,Hacked Leg,3,"Gain 1 Prone and 2 Bleeding Conditions, and suffer a Broken Bone (Minor) injury."
+80,Torn Thigh,3,"Gain 3 Bleeding Conditions. Until you receive Surgery to stitch the cut, any associated Leg Damage you receive inflicts an additional Bleeding Condition."
+85,Ruptured Tendon,3,Gain a Prone and Stunned Condition. Pass a Hard (-20) Endurance Test or gain the Unconscious Condition. Your leg is useless (see Amputated Parts). Suffer a Torn Muscle (Major) injury.
+90,Cracked Shin,4,"Gain a Stunned and Prone Condition. Further, suffer a Torn Muscle (Major) and Broken Bone (Minor) injury."
+95,Broken Knee,4,"You gain 1 Bleeding, 1 Prone, and 1 Stunned Condition, and a Broken Bone (Major) injury."
+105,Dislocated Knee,4,"Gain the Prone Condition. Pass a Hard (-20) Endurance Test, or gain the Stunned Condition, which is not removed until you receive Medical Attention. After this initial Medical Attention, an Extended Average (+20) Heal Test reaching 6 SL resets the knee. After this, Movement is halved and Tests made using the leg suffer a -10 penalty for 1d10 days."
+115,Crushed Foot,4,"Make an Average (+20) Endurance Test. if you fail, gain the Prone Condition and lose 1 toe, plus 1 additional toe for each SL below 0 - Amputation (Average). Gain 2 Bleeding Conditions. If you don't receive Surgery within 1d10 days, you lose the foot."
+120,Severed Foot,5,"Your foot is severed- Amputation (Hard). You gain 3 Bleeding, 2 Stunned, and 1 Prone Condition."
+125,Cut Tendon,5,"Your leg collapses. Gain 2 Bleeding, 2 Stunned, and 1 Prone Condition and your leg never works again - Amputation (Very Hard)."
+500,Shattered Pelvis,Death,"The blow shatters your pelvis, severing a leg. You die instantly from traumatic shock."

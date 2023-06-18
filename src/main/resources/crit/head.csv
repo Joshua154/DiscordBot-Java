@@ -1,0 +1,21 @@
+max	description	wounds	additionalEffects
+03	Dramatic Injury	1	A prink to the cheek. Gain 1 Bleeding Condition. Once healed, the scar provides a bonus of +1 SL to appropriate social Tests. You can only gain this benefit once.
+06	Rattling Blow	1	The blow floods your vision with flashing lights. Gain 1 Stunned Condition.
+09	Poked Eye	1	The blow glances across your eye socket. Gain 1 Blinded Condition.
+15	Ear Bash	1	Your ear is left ringing. Gain 1 Deafened Condition.
+20	Minor Cut	1	The strike opens your cheek. Gain 1 Bleeding Condition.
+25	Black Eye	2	A blow glances your eye. Gain 2 Blinded Conditions.
+30	Sliced Ear	2	A blow cuts into your ear. Gain 2 Deafened and 1 Bleeding Condition.
+35	Struck Forehead	2	A solid blow strikes your forehead. Gain 2 Bleeding Conditions and a Blinded Condition that cannot be removed until all Bleeding Conditions are removed.
+40	Fractured Jaw	2	The blow fractures your jaw. Gain 2 Stunned Conditions. Suffer a Broken Bone (Minor) injury.
+45	Major Eye Wound	3	A blow strikes your eye socket. Gain 1 Bleeding Condition. Also gain 1 Blinded Condition that cannot be removed until you receive Medical Attention.
+50	Major Ear Wound	3	The blow damages your ear. Suffer a -20 penalty on all Tests relating to hearing. If you suffer this result again, your hearing is permanently lost.
+55	Broken Nose	3	A solid blow to the nose. Gain 2 Bleeding Conditions. Make a Challenging (+0) Endurance Test or also gain a Stunned Condition.
+60	Broken Jaw	3	The blow breaks your jaw. Gain 3 Stunned Conditions. Make a Challenging (+0) Endurance Test or gain an Unconscious Condition. Suffer a Broken Bone (Major) injury.
+65	Mangled Ear	4	A blow tears your ear apart. Gain 3 Deafened and 2 Bleeding Conditions. Lose your ear - Amputation (Average).
+75	Smashed Mouth	4	The blow smashes out several teeth. Gain 2 Bleeding Conditions. Lose 1d10 teeth - Amputation (Easy).
+80	Concussive Blow	4	A solid thump to the skull. Take 1 Deafened, 2 Bleeding, and 1d10 Stunned Conditions. Gain a Fatigued Condition that lasts for 1d10 days.
+85	Devastated Eye	5	A strike to your eye bursts it. Gain 3 Blinded, 2 Bleeding, and 1 Stunned Condition. Lose your eye - Amputation (Difficult).
+94	Disfiguring Blow	5	The blow destroys your eye and nose. Gain 3 Bleeding, 3 Blinded, and 2 Stunned Conditions. Lose your eye and nose - Amputation (Hard).
+99	Mangled Jaw	5	The blow shatters your jaw and destroys your tongue, sending teeth flying. Gain 4 Bleeding and 3 Stunned Conditions. Suffer a Broken Bone (Major) injury and lose your tongue and 1d10 teeth - Amputation (Hard).
+500	Shattered Skull	Death	Your head is caved in and you collapse, instantly dead.
