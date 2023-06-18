@@ -2,7 +2,7 @@ package de.joshua.test
 
 import de.joshua.api.commands.slashcommands.SlashCommand
 import de.joshua.api.commands.slashcommands.SlashCommands
-import de.joshua.dnd.Dice
+import de.joshua.dnd.dices.Dice
 import net.dv8tion.jda.api.EmbedBuilder
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent
 import net.dv8tion.jda.api.interactions.commands.OptionType

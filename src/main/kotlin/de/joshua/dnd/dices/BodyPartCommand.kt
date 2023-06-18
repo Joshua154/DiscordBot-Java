@@ -1,4 +1,4 @@
-package de.joshua.dnd
+package de.joshua.dnd.dices
 
 import de.joshua.api.commands.slashcommands.SlashCommand
 import de.joshua.api.commands.slashcommands.SlashCommands
@@ -10,9 +10,9 @@ import net.dv8tion.jda.internal.interactions.CommandDataImpl
 import java.time.Instant
 
 @SlashCommands
-class d10Command : SlashCommand {
+class BodyPartCommand : SlashCommand {
     override fun commandData(): CommandDataImpl {
-        return CommandDataImpl("d10", "roles a d100 Test")
+        return CommandDataImpl("bodypart", "roles a d100 Test")
             .addOptions(
                 OptionData(OptionType.INTEGER, "times", "Amount of roles"),
                 OptionData(OptionType.USER, "user", "User to roll for"),
@@ -29,7 +29,7 @@ class d10Command : SlashCommand {
         }
 
         if (event.getOption("times") != null && event.getOption("times")?.asInt!! > 1) {
-            val rolls = List(event.getOption("times")?.asInt!!) { Dice.rollDice(10) }
+            val rolls = List(event.getOption("times")?.asInt!!) { Dice.getBodyPart(Dice.rollDice()) }
 
             val embed = EmbedBuilder()
                 .setAuthor(
@@ -38,21 +38,18 @@ class d10Command : SlashCommand {
                     user.avatarUrl
                 )
                 .setTimestamp(Instant.now())
-                .setTitle("Rolled ${rolls.size} times 1d10")
-                .setDescription(rolls.joinToString { "\n" + it.toString() })
+                .setTitle("Rolled ${rolls.size} times")
+                .setDescription(rolls.joinToString { "\n" + it})
 
-            event.replyEmbeds(embed.build()).setEphemeral(ephemeral).setActionRow(Dice.getActionRow()).queue()
+            event.replyEmbeds(embed.build()).setActionRow(Dice.getActionRow()).queue()
         } else {
-            val roll = Dice.rollDice(10)
-
             val embed = EmbedBuilder()
                 .setAuthor(
                     user.name,
                     null,
                     user.avatarUrl
                 )
-                .setTitle("1d10")
-                .setDescription(roll.toString())
+                .setTitle(Dice.getBodyPart(Dice.rollDice()))
                 .setTimestamp(Instant.now())
 
             event.replyEmbeds(embed.build()).setEphemeral(ephemeral).setActionRow(Dice.getActionRow()).queue()

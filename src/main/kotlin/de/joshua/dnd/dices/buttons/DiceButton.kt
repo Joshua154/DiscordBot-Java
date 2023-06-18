@@ -1,8 +1,8 @@
-package de.joshua.dnd.buttons
+package de.joshua.dnd.dices.buttons
 
 import de.joshua.api.buttons.Button
 import de.joshua.api.buttons.Buttons
-import de.joshua.dnd.Dice
+import de.joshua.dnd.dices.Dice
 import net.dv8tion.jda.api.EmbedBuilder
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent
 import net.dv8tion.jda.api.interactions.components.ItemComponent
