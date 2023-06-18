@@ -74,7 +74,7 @@ class Dice {
                 }
             }
 
-            val critEntre : CritTableEntry = critTableEntries.find { it.max > intensity } ?: CritTableEntry(0, "", "Error", "")
+            val critEntre : CritTableEntry = critTableEntries.find { it.max > intensity } ?: critTableEntries.maxByOrNull { it.max } ?: CritTableEntry(0, "", "Error", "out of bounds")
 
             return CritEntry(location, intensity, critEntre.description, critEntre.wounds, critEntre.additionalEffects)
         }
