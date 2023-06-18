@@ -1,4 +1,4 @@
-package de.joshua.dnd
+package de.joshua.dnd.dices
 
 import de.joshua.api.commands.slashcommands.SlashCommand
 import de.joshua.api.commands.slashcommands.SlashCommands
@@ -22,21 +22,23 @@ class CritCommand : SlashCommand {
                     Command.Choice("arm", "arm"),
                     Command.Choice("body", "body"),
                     Command.Choice("leg", "leg")
-                )
+                ),
+                OptionData(OptionType.INTEGER, "modifier", "Modifier to add to the roll")
             )
     }
 
     override fun onExecute(event: SlashCommandInteractionEvent) {
         val ephemeral = event.getOption("private") != null && event.getOption("private")?.asBoolean!!
+        val modifier: Int = event.getOption("modifier")?.asInt ?: 0
 
         var user = event.user
         if(event.getOption("user") != null){
             user = event.getOption("user")?.asUser!!
         }
 
-        var crit: CritEntry? = Dice.getCrit()
+        var crit: CritEntry? = Dice.getCrit(Dice.rollDice(), Dice.rollDice() + modifier)
         if(event.getOption("location") != null){
-            crit = Dice.getCrit(getBodyPartNumber(event.getOption("location")?.asString!!))
+            crit = Dice.getCrit(getBodyPartNumber(event.getOption("location")?.asString!!), Dice.rollDice() + modifier)
         }
         if(crit ==  null){
             event.reply("Error")
@@ -50,7 +52,7 @@ class CritCommand : SlashCommand {
                 null,
                 user.avatarUrl
             )
-            .setTitle("${crit.description} (${crit.intensity})")
+            .setTitle("${crit.description} (${crit.intensity - modifier} + ${modifier}mod)")
             .addField("Location", "${Dice.getBodyPart(crit.location)} (${crit.location})", false)
             .addField("Wounds", crit.wounds, false)
             .addField("Additional Effects", crit.additionalEffects, false)
