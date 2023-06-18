@@ -1,0 +1,21 @@
+max,description
+5,Ghostly Voices: Everyone within Willpower yards hears darkly seductive whispering of voices emanating from the Realm of Chaos. All sentient creatures must pass an Average (+20) Cool Test or gain 1 Corruption point.
+10,"Aethyric Shock: You suffer 1d10 Wounds, ignoring Toughness Bonus and Armour Points. Pass an Average (+20) Endurance Test or also gain a Stunned Condition."
+15,"Death Walker: Your footsteps leave death in their wake. For the next 1d10 hours, any plant life near you withers and dies."
+20,"Double Trouble: The effect of the spell you cast occurs elsewhere within 1d10 miles. At the GM's discretion, it should have consequences whenever possible."
+25,"Soulfire: Gain an Ablaze Condition, as you are wreathed in unholy flames with a colour associated with your Lore."
+30,"Speak in Tongues: You gabble unintelligibly for 1d10 rounds. During this time, you cannot communicate verbally, or make any Casting Tests. You may otherwise act normally."
+35,"Swarmed: You are engaged by a swarm of aethyric Rats, Giant Spiders, Snakes, or similar (GM's choice). Use the standard profiles for the relevant creature type, adding the Swarm Creature Trait. After 1d10 rounds, if not yet destroyed, the swarm retreats."
+40,"Ragdoll: You are flung 1d10 yards through the air in a random direction, taking 1d10 Wounds on landing, ignoring Armour Points, and receiving the Prone Condition."
+45,"Limb frozen: One limb (randomly determined) is frozen in place for 1d10 hours. The limb is useless, as if it had been Amputated (WFRP, page 180)."
+50,Darkling Sight: You lose the benefit of the Second Sight Talent for 1d10 hours. Channelling Tests also suffer a -20 penalty for the duration.
+55,"Chaotic Foresight: Gain a bonus pool of 1d10 Fortune points (this may take you beyond your natural limit). Every time you spend one of these points, gain 1 Corruption point. Any of these points remaining at the end of the session are lost. The GM also assigns you a number of reversed symbols (see page 45) equal to your Willpower Bonus."
+60,"Levitation: You are borne aloft on the Winds of Magic, floating 1d10 yards above the ground for 1d10 minutes. Other Characters may forcibly move you, and you may move using spells, wings, or similar, but will continually return to your levitating position if otherwise left alone. Refer to the falling rules (WFRP, page 166) for what happens when levitation ends."
+65,"Regurgitation: You spew uncontrollably, throwing up far more foul-smelling vomitus than your body can possibly contain. Gain the Stunned Condition, which lasts for 1d10 Rounds."
+70,Chaos Quake: All creatures within 1d100 yards must pass an Average (+20) Athletics Test or gain the Prone Condition.
+75,"Forgetfulness: The spell you are trying to cast is lost to your memory. If you had previously memorised the spell, you no longer recall it and must memorise it again. If casting from a grimoire, the page upon which the spell is written bursts into flames. The spell is lost and, unless appropriate action is taken quickly, the grimoire receives an Ablaze Condition."
+80,"Traitor's Heart: The Dark Gods entice you to commit horrendous perfidy. Should you attack or otherwise betray an ally to the full extent of your capabilities, regain all Fortune points. If you cause another Character to lose a Fate point, gain +1 Fate point."
+85,"Foul Enfeeblement: Gain 1 Corruption point, a Prone Condition, and a Fatigued Condition."
+90,"Hellish Stench: You smell really bad! You gain the Distracting Creature Trait (WFRP, page 339), and probably the enmity of anyone with a sense of smell. This lasts for 1d10 hours."
+95,Power Drain: You are unable to use the Talent used to cast the spell (usually Arcane Magic) for 1d10 minutes.
+100,"Aethyric Feedback: Everyone within Willpower Bonus yards - friend and foe alike - suffers 1d10 Wounds, ignoring Toughness Bonus and Armour Points, and receives the Prone Condition. If there are no targets in range, the magic has nowhere to vent, SO your head explodes, killing you instantly."

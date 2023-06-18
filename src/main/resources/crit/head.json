@@ -1,122 +1,122 @@
 [
   {
-    "max": 10,
+    "max": 3,
     "description": "Dramatic Injury",
+    "wounds": "T",
+    "additionalEffects": "A prink to the cheek. Gain 1 Bleeding Condition. Once healed, the scar provides a bonus of +1 SL to appropriate social Tests. You can only gain this benefit once."
+  },
+  {
+    "max": 6,
+    "description": "Rattling Blow",
     "wounds": "1",
-    "additionalEffects": "A fine wound across the forehead and cheek. Gain **1 Bleeding Condition**. Once the wound is healed, the impressive scar it leaves provides a bonus of **+1 SL** to appropriate social Tests. You can only gain this benefit once."
+    "additionalEffects": "The blow floods your vision with flashing lights. Gain 1 Stunned Condition."
+  },
+  {
+    "max": 9,
+    "description": "Poked Eye",
+    "wounds": "1",
+    "additionalEffects": "The blow glances across your eye socket. Gain 1 Blinded Condition."
+  },
+  {
+    "max": 15,
+    "description": "Ear Bash",
+    "wounds": "1",
+    "additionalEffects": "Your ear is left ringing. Gain 1 Deafened Condition."
   },
   {
     "max": 20,
     "description": "Minor Cut",
     "wounds": "1",
-    "additionalEffects": "The strike opens your cheek and blood flies. Gain **1 Bleeding Condition**."
+    "additionalEffects": "The strike opens your cheek. Gain 1 Bleeding Condition."
   },
   {
     "max": 25,
-    "description": "Poked Eye",
-    "wounds": "1",
-    "additionalEffects": "The blow glances across your eye socket. Gain **1 Blinded Condition**."
+    "description": "Black Eye",
+    "wounds": "2",
+    "additionalEffects": "A blow glances your eye. Gain 2 Blinded Conditions."
   },
   {
     "max": 30,
-    "description": "Ear Bash",
-    "wounds": "1",
-    "additionalEffects": "After a sickening impact, your ear is left ringing. Gain **1 Deafened Condition**."
+    "description": "Sliced Ear",
+    "wounds": "2",
+    "additionalEffects": "A blow cuts into your ear. Gain 2 Deafened and 1 Bleeding Condition."
   },
   {
     "max": 35,
-    "description": "Rattling Blow",
+    "description": "Struck Forehead",
     "wounds": "2",
-    "additionalEffects": "The blow floods your vision with flashing lights. Gain **1 Stunned Condition**."
+    "additionalEffects": "A solid blow strikes your forehead. Gain 2 Bleeding Conditions and a Blinded Condition that cannot be removed until all Bleeding Conditions are removed."
   },
   {
     "max": 40,
-    "description": "Black Eye",
+    "description": "Fractured Jaw",
     "wounds": "2",
-    "additionalEffects": "A solid blow hits your eye, leaving tears and pain. Gain **2 Blinded Conditions**."
+    "additionalEffects": "The blow fractures your jaw. Gain 2 Stunned Conditions. Suffer a Broken Bone (Minor) injury."
   },
   {
     "max": 45,
-    "description": "Sliced Ear",
-    "wounds": "2",
-    "additionalEffects": "Your side of your head takes a hard blow, cutting deep into your ear. Gain **2 Deafened** and **1 Bleeding Condition**."
+    "description": "Major Eye Wound",
+    "wounds": "3",
+    "additionalEffects": "A blow strikes your eye socket. Gain 1 Bleeding Condition. Also gain 1 Blinded Condition that cannot be removed until you receive Medical Attention."
   },
   {
     "max": 50,
-    "description": "Struck Forehead",
-    "wounds": "2",
-    "additionalEffects": "A solid blow hits your forehead. Gain **2 Bleeding Conditions** and a **1 Blinded Condition** that cannot be removed until **all Bleeding Conditions are removed**"
+    "description": "Major Ear Wound",
+    "wounds": "3",
+    "additionalEffects": "The blow damages your ear. Suffer a -20 penalty on all Tests relating to hearing. If you suffer this result again, your hearing is permanently lost."
   },
   {
     "max": 55,
-    "description": "Fractured Jaw",
+    "description": "Broken Nose",
     "wounds": "3",
-    "additionalEffects": "With a sickening crunch, pain fills your face as the blow fractures your jaw. Gain **2 Stunned Conditions**. Suffer a **Broken Bone (Minor) injury**."
+    "additionalEffects": "A solid blow to the nose. Gain 2 Bleeding Conditions. Make a Challenging (+0) Endurance Test or also gain a Stunned Condition."
   },
   {
     "max": 60,
-    "description": "Major Eye Wound",
+    "description": "Broken Jaw",
     "wounds": "3",
-    "additionalEffects": "The blow cracl Gain 1 Bleeding Condition. Also gain **1 Blinded Condition** that cannot be removed until you **receive Medical Attention**."
+    "additionalEffects": "The blow breaks your jaw. Gain 3 Stunned Conditions. Make a Challenging (+0) Endurance Test or gain an Unconscious Condition. Suffer a Broken Bone (Major) injury."
   },
   {
     "max": 65,
-    "description": "Major Ear Wound",
-    "wounds": "3",
-    "additionalEffects": "The blow strikes deep into one car. Suffer a permanent **-20 penalty on all Tests** relating to hearing. If you suffer this result again, your hearing is permanently lost as the second ear falls quiet. Only **magic can heal** this."
-  },
-  {
-    "max": 70,
-    "description": "Broken Nose",
-    "wounds": "3",
-    "additionalEffects": "A solid blow to the centre of your face causing blood to pour. Gain **2 Bleeding Conditions**. Make a **Challenging (+0) Endurance** Test, or also gain a Stunned Condition After this wound has healed, gain **+1/—1 SL** on social rolls, depending on context, unless Surgery is used to reset the nose."
+    "description": "Mangled Ear",
+    "wounds": "4",
+    "additionalEffects": "A blow tears your ear apart. Gain 3 Deafened and 2 Bleeding Conditions. Lose your ear - Amputation (Average)."
   },
   {
     "max": 75,
-    "description": "Broken Jaw",
+    "description": "Smashed Mouth",
     "wounds": "4",
-    "additionalEffects": "The crack is sickening as the blow hits you under the chin, breaking your jaw. Gain **3 Stunned Conditions**. Make a Challenging **(+0) Endurance Test** or gain an **Unconscious Condition**. Suffer a **Broken Bone (Major) injury**."
+    "additionalEffects": "The blow smashes out several teeth. Gain 2 Bleeding Conditions. Lose 1d10 teeth - Amputation (Easy)."
   },
   {
     "max": 80,
     "description": "Concussive Blow",
     "wounds": "4",
-    "additionalEffects": "Your brain rattles in your skull as blood spurts from your nose and ears. Take **1 Deafened**, **2 Bleeding**, and **1d10 Stunned Conditions**. Gain a Fatigued Condition that **lasts for 1d10 days**. If you receive another **Critical Wound to your head** while suffering this Fatigued Condition, make an Average **(+20) Endurance** Test or also gain an **Unconscious Condition**."
+    "additionalEffects": "A solid thump to the skull. Take 1 Deafened, 2 Bleeding, and 1d10 Stunned Conditions. Gain a Fatigued Condition that lasts for 1d10 days."
   },
   {
     "max": 85,
-    "description": "Smashed Mouth",
-    "wounds": "4",
-    "additionalEffects": "With a sickening crunch, your mouth is suddenly filled with broken teeth and blood. Gain **2 Bleeding Conditions**. Lose **1d10 teeth** — **Amputation (Easy)**."
-  },
-  {
-    "max": 90,
-    "description": "Mangled Ear",
-    "wounds": "4",
-    "additionalEffects": "Little is left of your ear as the blow tears it apart. You gain **3 Deafened** and **2 Bleeding Conditions**. Lose your ear —Amputation (Average)**."
-  },
-  {
-    "max": 93,
     "description": "Devastated Eye",
     "wounds": "5",
-    "additionalEffects": "A strike to your eye completely bursts it, causing extraordinary pain. Gain **3 Blinded**, **2 Bleeding**, and **1 Stunned Condition**. Lose your eye — **Amputation (Difficult)**."
+    "additionalEffects": "A strike to your eye bursts it. Gain 3 Blinded, 2 Bleeding, and 1 Stunned Condition. Lose your eye - Amputation (Difficult)."
   },
   {
-    "max": 96,
+    "max": 94,
     "description": "Disfiguring Blow",
     "wounds": "5",
-    "additionalEffects": "The blow smashes your entire face, destroying your eye and nose in a cloud of blood. Gain **3 Bleeding**, **3 Blinded** and **2 Stunned Conditions**. Lose your eye and nose — **Amputation (Hard)**."
+    "additionalEffects": "The blow destroys your eye and nose. Gain 3 Bleeding, 3 Blinded, and 2 Stunned Conditions. Lose your eye and nose - Amputation (Hard)."
   },
   {
     "max": 99,
     "description": "Mangled Jaw",
     "wounds": "5",
-    "additionalEffects": "The blow almost removes your jaw as it utterly destroys your tongue, sending teeth flying in a shower of blood. Gain **4 Bleeding** and **3 Stunned Conditions**. Make a Very Hard **(—30) Endurance Test** or gain an **Unconscious Condition**. Suffer a Broken Bone (Major) injury and **lose your tongue** and **1d10 teeth** — **Amputation (Hard)**."
+    "additionalEffects": "The blow shatters your jaw and destroys your tongue, sending teeth flying. Gain 4 Bleeding and 3 Stunned Conditions. Suffer a Broken Bone (Major) injury and lose your tongue and 1d10 teeth - Amputation (Hard)."
   },
   {
-    "max": 100,
-    "description": "Decapitated",
+    "max": 500,
+    "description": "Shattered Skull",
     "wounds": "Death",
-    "additionalEffects": "Your head is entirely severed from your neck and soars through the air, landing **1d10 feet** away in a **random direction** (see Scatter). Your body collapses, **instantly dead**."
+    "additionalEffects": "Your head is caved in and you collapse, instantly dead."
   }
 ]

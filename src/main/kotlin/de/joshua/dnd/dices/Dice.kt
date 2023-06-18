@@ -1,12 +1,12 @@
-package de.joshua.dnd
+package de.joshua.dnd.dices
 
 import com.beust.klaxon.JsonReader
 import com.beust.klaxon.Klaxon
 import de.joshua.DiscordBot
-import de.joshua.dnd.buttons.BodyPartButton
-import de.joshua.dnd.buttons.CritButton
-import de.joshua.dnd.buttons.DiceButton
-import de.joshua.dnd.buttons.d10Button
+import de.joshua.dnd.dices.buttons.BodyPartButton
+import de.joshua.dnd.dices.buttons.CritButton
+import de.joshua.dnd.dices.buttons.DiceButton
+import de.joshua.dnd.dices.buttons.d10Button
 import net.dv8tion.jda.api.interactions.components.ItemComponent
 import java.awt.Color
 import java.io.StringReader
@@ -39,7 +39,7 @@ class Dice {
             return list.size == 3 || list[0] == list[1]
         }
 
-        fun getCrit(location: Int = this.rollDice(), intensity: Int = this.rollDice()): CritEntry {
+        fun getCrit(location: Int = rollDice(), intensity: Int = rollDice()): CritEntry {
 
             var file: URL? = null
 
@@ -57,11 +57,11 @@ class Dice {
                 file = DiscordBot::class.java.getResource("/crit/leg.json")
             }
 
-            if(file == null) return CritEntry(0, "", "Error", "", "")
+            if(file == null) return CritEntry(0, 0, "Error", "", "")
 
 
             val klaxon = Klaxon()
-            val result = arrayListOf<CritTableEntry>()
+            val critTableEntries = arrayListOf<CritTableEntry>()
             JsonReader(StringReader(file.readText())).use { reader ->
                 reader.beginArray {
                     while (reader.hasNext()) {
@@ -69,24 +69,14 @@ class Dice {
                         if (person != null) {
                             result.add(person)
                         }*/
-                        klaxon.parse<CritTableEntry>(reader)?.let { result.add(it) }
+                        klaxon.parse<CritTableEntry>(reader)?.let { critTableEntries.add(it) }
                     }
                 }
             }
 
+            val critEntre : CritTableEntry = critTableEntries.find { it.max > intensity } ?: CritTableEntry(0, "", "Error", "")
 
-            var index = -1
-            for (i in result.size - 1 downTo 0) {
-                if (result.get(i).max <= intensity) {
-                    index = i
-                    break
-                }
-            }
-            if(index == -1) index = 0
-
-
-
-            return CritEntry(location, intensity.toString(), result[index].description, result[index].wounds, result[index].additionalEffects)
+            return CritEntry(location, intensity, critEntre.description, critEntre.wounds, critEntre.additionalEffects)
         }
 
         fun getBodyPart(number: Int): String {
@@ -146,7 +136,7 @@ data class CritTableEntry(
 
 data class CritEntry(
     val location: Int,
-    val intensity: String,
+    val intensity: Int,
     val description: String,
     val wounds: String,
     val additionalEffects: String,

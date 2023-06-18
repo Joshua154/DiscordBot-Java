@@ -1,4 +1,4 @@
-package de.joshua.dnd
+package de.joshua.dnd.dices
 
 import com.beust.klaxon.JsonReader
 import com.beust.klaxon.Klaxon
@@ -40,7 +40,9 @@ class MiscastCommand : SlashCommand {
     }
 
     if (event.getOption("times") != null && event.getOption("times")?.asInt!! > 1) {
-      val rolls = List(event.getOption("times")?.asInt!!) { getEntryMaxVal(getFileContent(event.subcommandName?:"minor"), Dice.rollDice(100)) }
+      val rolls = List(event.getOption("times")?.asInt!!) { getEntryMaxVal(getFileContent(event.subcommandName?:"minor"),
+          Dice.rollDice(100)
+      ) }
 
       val embed =
           EmbedBuilder()

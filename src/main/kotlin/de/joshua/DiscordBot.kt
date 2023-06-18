@@ -7,6 +7,7 @@ import de.joshua.api.modals.ModalHandler
 import net.dv8tion.jda.api.JDABuilder
 import net.dv8tion.jda.api.requests.GatewayIntent
 import net.dv8tion.jda.api.utils.cache.CacheFlag
+import java.io.File
 
 class DiscordBot {
 
@@ -45,6 +46,8 @@ class DiscordBot {
         modalHandler.registerModals()
         menuHandler.registerEntityMenus()
         menuHandler.registerStringMenus()
+
+        File("campaings.csv").createNewFile()
 
         println("Bot is running")
     }

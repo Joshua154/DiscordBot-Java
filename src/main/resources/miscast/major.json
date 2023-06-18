@@ -1,82 +1,82 @@
 [
   {
     "max": 5,
-    "description": "**Ghostly Voices:**\nEveryone within Willpower yards hears darkly seductive whispering of voices emanating from the Realm of Chaos. All sentient creatures must pass an Average (+20) Cool Test or gain 1 Corruption point."
+    "description": "Ghostly Voices: Everyone within Willpower yards hears darkly seductive whispering of voices emanating from the Realm of Chaos. All sentient creatures must pass an Average (+20) Cool Test or gain 1 Corruption point."
   },
   {
     "max": 10,
-    "description": "**Hexeyes:**\nYour eyes turn an unnatural colour associated with your Lore for 1d10 hours. While your eyes are discoloured, you have 1 Blinded Condition that cannot be resolved by any means."
+    "description": "Aethyric Shock: You suffer 1d10 Wounds, ignoring Toughness Bonus and Armour Points. Pass an Average (+20) Endurance Test or also gain a Stunned Condition."
   },
   {
     "max": 15,
-    "description": "**Aethyric Shock:**\nyou suffer 1d10 wounds, ignoring your Toughness Bonus and Armour Points. Pass an Average (+20) Endurance Test, or also gain a Stunned Condition.\n"
+    "description": "Death Walker: Your footsteps leave death in their wake. For the next 1d10 hours, any plant life near you withers and dies."
   },
   {
     "max": 20,
-    "description": "**Death Walker:**\nYour footsteps leave death in their wake. For the next 1d10 hours, any plant life near you with- ers and dies.\n"
+    "description": "Double Trouble: The effect of the spell you cast occurs elsewhere within 1d10 miles. At the GM's discretion, it should have consequences whenever possible."
   },
   {
     "max": 25,
-    "description": "**Intestinal Rebellion:**\nYour bowels move uncontrollably, and you soil yourself. Gain 1 Fatigued Condition, which cannot be removed until you can change your clothes and clean yourself up.\n"
+    "description": "Soulfire: Gain an Ablaze Condition, as you are wreathed in unholy flames with a colour associated with your Lore."
   },
   {
     "max": 30,
-    "description": "**Soulfire:**\nGain an Ablaze Condition, as you are wreathed in unholy flames with a colour associated with your Lore.\n"
+    "description": "Speak in Tongues: You gabble unintelligibly for 1d10 rounds. During this time, you cannot communicate verbally, or make any Casting Tests. You may otherwise act normally."
   },
   {
     "max": 35,
-    "description": "**Speak in Tongues:**\nYou gabble unintelligibly for 1d10 rounds. During this time, you cannot communicate verbally, or make any Casting Tests, although you may otherwise act normally.\n"
+    "description": "Swarmed: You are engaged by a swarm of aethyric Rats, Giant Spiders, Snakes, or similar (GM's choice). Use the standard profiles for the relevant creature type, adding the Swarm Creature Trait. After 1d10 rounds, if not yet destroyed, the swarm retreats."
   },
   {
     "max": 40,
-    "description": "**Swarmed:**\nYou are engaged by a swarm of aethyric Rats, Giant Spiders, Snakes, or similar (GM's choice). Use the standard profiles for the relevant creature type, adding the Swarm Creature Trait. After 1d10 rounds, if not yet destroyed, the swarm retreats.\n"
+    "description": "Ragdoll: You are flung 1d10 yards through the air in a random direction, taking 1d10 Wounds on landing, ignoring Armour Points, and receiving the Prone Condition."
   },
   {
     "max": 45,
-    "description": "**Ragdoll:**\nYou are flung 1d10 yards through the air in a random direction, taking 1d10 wounds on landing, ignoring Armour Points, and receiving the Prone Condition\n"
+    "description": "Limb frozen: One limb (randomly determined) is frozen in place for 1d10 hours. The limb is useless, as if it had been Amputated (WFRP, page 180)."
   },
   {
     "max": 50,
-    "description": "**Limb frozen:**\nOne limb (randomly determined) is frozen in place for 1d10 hours. The limb is useless, as if it had been Amputated (see page 180).\n"
+    "description": "Darkling Sight: You lose the benefit of the Second Sight Talent for 1d10 hours. Channelling Tests also suffer a -20 penalty for the duration."
   },
   {
     "max": 55,
-    "description": "**Darkling Sight:**\nYou lose the benefit of the Second Sight Talent for 1d10 hours. Channelling Tests also suffer a penalty of -20 for the duration.\n"
+    "description": "Chaotic Foresight: Gain a bonus pool of 1d10 Fortune points (this may take you beyond your natural limit). Every time you spend one of these points, gain 1 Corruption point. Any of these points remaining at the end of the session are lost. The GM also assigns you a number of reversed symbols (see page 45) equal to your Willpower Bonus."
   },
   {
     "max": 60,
-    "description": "**Chaotic Foresight:**\nGain a bonus pool of 1d10 Fortune points (this may take you beyond your natural limit). Every time you spend one of these points, gain 1 Corruption point. Any of these points remaining at the end of the session are lost.\n"
+    "description": "Levitation: You are borne aloft on the Winds of Magic, floating 1d10 yards above the ground for 1d10 minutes. Other Characters may forcibly move you, and you may move using spells, wings, or similar, but will continually return to your levitating position if otherwise left alone. Refer to the falling rules (WFRP, page 166) for what happens when levitation ends."
   },
   {
     "max": 65,
-    "description": "**Levitation:**\nYou are borne aloft on the Winds of Magic, floating 1d10 yards above the ground for 1d10 min- utes. Other characters may forcibly move you, and you may move using spells, wings or similar, but will continu- ally return to your levitating position if otherwise left alone. Refer to the Falling rules (see page 166) for what happens when Levitation ends.\n"
+    "description": "Regurgitation: You spew uncontrollably, throwing up far more foul-smelling vomitus than your body can possibly contain. Gain the Stunned Condition, which lasts for 1d10 Rounds."
   },
   {
     "max": 70,
-    "description": "**Regurgitation:**\nYou spew uncontrollably, throwing up far more foul-smelling vomitus than your body can possibly contain. Gain the Stunned Condition, which lasts for 1d10 Rounds.\n"
+    "description": "Chaos Quake: All creatures within 1d100 yards must pass an Average (+20) Athletics Test or gain the Prone Condition."
   },
   {
     "max": 75,
-    "description": "**Chaos Quake:**\nAll creatures within 1d100 yards must pass an Average (+20) Athletics Test or gain the Prone Condition.\n"
+    "description": "Forgetfulness: The spell you are trying to cast is lost to your memory. If you had previously memorised the spell, you no longer recall it and must memorise it again. If casting from a grimoire, the page upon which the spell is written bursts into flames. The spell is lost and, unless appropriate action is taken quickly, the grimoire receives an Ablaze Condition."
   },
   {
     "max": 80,
-    "description": "**Traitor's Heart:**\nThe Dark Gods entice you to commit horrendous perfidy. Should you attack or otherwise betray an ally to the full extent of your capabilities, regain all Fortune points. If you cause another character to lose a Fate Point, gain +1 Fate Point.\n"
+    "description": "Traitor's Heart: The Dark Gods entice you to commit horrendous perfidy. Should you attack or otherwise betray an ally to the full extent of your capabilities, regain all Fortune points. If you cause another Character to lose a Fate point, gain +1 Fate point."
   },
   {
     "max": 85,
-    "description": "**Foul Enfeeblement:**\nGain 1 Corruption point, the Prone Condition, and a Fatigued Condition\n"
+    "description": "Foul Enfeeblement: Gain 1 Corruption point, a Prone Condition, and a Fatigued Condition."
   },
   {
     "max": 90,
-    "description": "**Hellish Stench:**\nYou now smell really bad! You gain the Distracting Creature Trait (see page 339), and probably the enmity of anyone with a sense of smell. This lasts for 1d10 hours.\n"
+    "description": "Hellish Stench: You smell really bad! You gain the Distracting Creature Trait (WFRP, page 339), and probably the enmity of anyone with a sense of smell. This lasts for 1d10 hours."
   },
   {
     "max": 95,
-    "description": "**Power Drain:**\nYou are unable to use the Talent used to cast the spell (usually Arcane Magic, though it could be Chaos Magic, or a similar Talent), for 1d10 minutes.\n"
+    "description": "Power Drain: You are unable to use the Talent used to cast the spell (usually Arcane Magic) for 1d10 minutes."
   },
   {
     "max": 100,
-    "description": "**Aethyric Feedback:**\nEveryone within a number of yards equal to your Willpower Bonus - friend and foe alike - suffers 1d10 wounds, ignoring Toughness Bonus and Armour Points, and receives the Prone Condition. If there are no targets in range, the magic has nowhere to vent, so your head explodes, killing you instantly.\n"
+    "description": "Aethyric Feedback: Everyone within Willpower Bonus yards - friend and foe alike - suffers 1d10 Wounds, ignoring Toughness Bonus and Armour Points, and receives the Prone Condition. If there are no targets in range, the magic has nowhere to vent, SO your head explodes, killing you instantly."
   }
 ]

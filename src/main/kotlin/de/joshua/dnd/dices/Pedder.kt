@@ -1,4 +1,4 @@
-package de.joshua.dnd
+package de.joshua.dnd.dices
 
 import de.joshua.api.commands.slashcommands.SlashCommand
 import de.joshua.api.commands.slashcommands.SlashCommands

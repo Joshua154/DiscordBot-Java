@@ -1,0 +1,21 @@
+max,description
+5,Witchsign: The next living creature born within 1 mile is mutated.
+10,Soured Milk: All milk within 1d100 yards goes sour instantly.
+15,"Blight: Willpower Bonus fields within Willpower Bonus miles suffer a blight, and all crops rot overnight."
+20,"Soulwax: Your ears clog instantly with a thick wax. Gain 1 Deafened Condition, which is not removed until someone cleans them for you (with a successful Average (+20) Heal Test)."
+25,"Freezing Breath: The temperature in your immediate vicinity falls suddenly and people's breath can be seen in the air. People within Willpower Bonus yards of you must make a Challenging (+0) Endurance Test or suffer -10 Ballistic Skill, Agility, and Dexterity due to the sudden cold until they leave the area. The effect lasts for 1 minute."
+30,"Unfasten: On your person, every buckle unfastens and every lace unties, which may cause belts to fall, pouches to open, bags to fall, and armour to slip."
+35,Wayward Garb: Your clothes seem to writhe with a mind of their own. Receive 1 Entangled Condition with a Strength of 1d10 x 5 to resist.
+40,"Curse of Temperance: All alcohol within 1d100 yards goes bad, tasting bitter and foul. This helps explain why spellcasting is frowned upon in many of the Old World's taverns."
+45,Cloyed Tongue: You suffer a -10 penalty to all Language Tests (including Casting Tests) for 1d10 Rounds.
+50,"Driven to Distraction: If engaged in combat, gain the Surprised Condition. Otherwise, you are completely startled, your heart racing, and unable to concentrate for a few moments."
+55,Unholy Visions: Fleeting visions of profane and unholy acts harass you. Receive a Blinded Condition; pass a Challenging (+0) Cool Test or gain another.
+60,"Hexeyes: Your eyes turn an unnatural colour associated with your Lore for 1d10 hours. While your eyes are discoloured, you have 1 Blinded Condition that cannot be resolved by any means. You lose the ability to use the Magic Awareness and Second Sight Talents during this time."
+65,"Rupture: Your nose, eyes, and ears bleed profusely. Gain a Bleeding Condition."
+70,Fell Whispers: Pass an Average (+20) Willpower Test or gain 1 Corruption point. The GM may choose two reversed symbols from the Symbols Table (see page 45).
+75,The Horror!: You are disturbed by a sudden rush of disturbing visions of the Realm of Chaos. The GM may select a reversed symbol from the Symbols Table (see page 45). Pass a Hard (-20) Cool Test or gain 1 Broken Condition.
+80,Curse of Corruption: Gain 1 Corruption point.
+85,"Intestinal Rebellion: Your bowels move uncontrollably and you soil yourself. Gain 1 Fatigued Condition, which cannot be removed until you can change your clothes and clean yourself up."
+90,"Marked by Magic: You suffer from an arcane mark, associated with the Wind of Magic you worked. See page 58 for Marks of Hysh, page 70 for Marks of Chamon, page 82 for Marks of Ghyran, page 94 for marks of Azyr, page 106 for Marks of Ulgu, page 118 for Marks of Shyish, page 130 for Marks of Aqshy, and page 142 for Marks of Ghur. If no Arcane Marks Table exists for your magical tradition, roll again on the Major Miscast Table."
+95,"Multiplying Misfortune: Roll twice on this table, rerolling any results between 91-00."
+100,Cascading Chaos: Roll on the Major Miscast Table.
