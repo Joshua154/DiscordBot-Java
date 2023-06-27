@@ -24,7 +24,12 @@ class DiscordBot {
 
         val builder =
             JDABuilder.createDefault(botToken)
-        builder.enableIntents(GatewayIntent.GUILD_MEMBERS, GatewayIntent.GUILD_PRESENCES, GatewayIntent.GUILD_VOICE_STATES, GatewayIntent.SCHEDULED_EVENTS)
+        builder.enableIntents(
+            GatewayIntent.GUILD_MEMBERS,
+            GatewayIntent.GUILD_PRESENCES,
+            GatewayIntent.GUILD_VOICE_STATES,
+            GatewayIntent.SCHEDULED_EVENTS
+        )
         builder.enableCache(CacheFlag.ONLINE_STATUS, CacheFlag.SCHEDULED_EVENTS)
 
         val commandHandler = CommandHandler()

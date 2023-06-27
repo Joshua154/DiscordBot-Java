@@ -32,15 +32,15 @@ class CritCommand : SlashCommand {
         val modifier: Int = event.getOption("modifier")?.asInt ?: 0
 
         var user = event.user
-        if(event.getOption("user") != null){
+        if (event.getOption("user") != null) {
             user = event.getOption("user")?.asUser!!
         }
 
         var crit: CritEntry? = Dice.getCrit(Dice.rollDice(), Dice.rollDice() + modifier)
-        if(event.getOption("location") != null){
+        if (event.getOption("location") != null) {
             crit = Dice.getCrit(getBodyPartNumber(event.getOption("location")?.asString!!), Dice.rollDice() + modifier)
         }
-        if(crit ==  null){
+        if (crit == null) {
             event.reply("Error")
             return
         }

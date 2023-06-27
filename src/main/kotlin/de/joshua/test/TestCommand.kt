@@ -20,7 +20,8 @@ class TestCommand : SlashCommand {
         println(Dice.getColor(((event.getOption("first")?.asDouble ?: 0) as Double)))
 
         event.replyEmbeds(
-            EmbedBuilder().setColor(Dice.getColor(((event.getOption("first")?.asDouble ?: 0) as Double))).setTitle("Test").build()
+            EmbedBuilder().setColor(Dice.getColor(((event.getOption("first")?.asDouble ?: 0) as Double)))
+                .setTitle("Test").build()
         ).queue()
     }
 }

@@ -16,63 +16,69 @@ import java.time.Instant
 
 @SlashCommands
 class MiscastCommand : SlashCommand {
-  override fun commandData(): CommandDataImpl {
-    return CommandDataImpl("miscast", "miscast")
-        .addSubcommands(
-            SubcommandData("minor", "minor miscast")
-                .addOptions(
-                    OptionData(OptionType.INTEGER, "times", "Amount of roles"),
-                    OptionData(OptionType.USER, "user", "User to roll for"),
-                    OptionData(OptionType.BOOLEAN, "private", "Roles a dice privately")),
-            SubcommandData("major", "major miscast")
-                .addOptions(
-                    OptionData(OptionType.INTEGER, "times", "Amount of roles"),
-                    OptionData(OptionType.USER, "user", "User to roll for"),
-                    OptionData(OptionType.BOOLEAN, "private", "Roles a dice privately")))
-  }
-
-  override fun onExecute(event: SlashCommandInteractionEvent) {
-    val ephemeral = event.getOption("private") != null && event.getOption("private")?.asBoolean!!
-
-    var user = event.user
-    if (event.getOption("user") != null) {
-      user = event.getOption("user")?.asUser!!
+    override fun commandData(): CommandDataImpl {
+        return CommandDataImpl("miscast", "miscast")
+            .addSubcommands(
+                SubcommandData("minor", "minor miscast")
+                    .addOptions(
+                        OptionData(OptionType.INTEGER, "times", "Amount of roles"),
+                        OptionData(OptionType.USER, "user", "User to roll for"),
+                        OptionData(OptionType.BOOLEAN, "private", "Roles a dice privately")
+                    ),
+                SubcommandData("major", "major miscast")
+                    .addOptions(
+                        OptionData(OptionType.INTEGER, "times", "Amount of roles"),
+                        OptionData(OptionType.USER, "user", "User to roll for"),
+                        OptionData(OptionType.BOOLEAN, "private", "Roles a dice privately")
+                    )
+            )
     }
 
-    if (event.getOption("times") != null && event.getOption("times")?.asInt!! > 1) {
-      val rolls = List(event.getOption("times")?.asInt!!) { getEntryMaxVal(getFileContent(event.subcommandName?:"minor"),
-          Dice.rollDice(100)
-      ) }
+    override fun onExecute(event: SlashCommandInteractionEvent) {
+        val ephemeral = event.getOption("private") != null && event.getOption("private")?.asBoolean!!
 
-      val embed =
-          EmbedBuilder()
-              .setAuthor(user.name, null, user.avatarUrl)
-              .setTimestamp(Instant.now())
-              .setTitle("Rolled ${rolls.size} ${event.subcommandName?:"minor"} Miscasts")
-              .setDescription(rolls.joinToString { "\n" + it.description })
+        var user = event.user
+        if (event.getOption("user") != null) {
+            user = event.getOption("user")?.asUser!!
+        }
 
-      event
-          .replyEmbeds(embed.build())
-          .setEphemeral(ephemeral)
-          .setActionRow(Dice.getActionRow())
-          .queue()
-    } else {
-      val roll = getEntryMaxVal(getFileContent(event.subcommandName?:"minor"), Dice.rollDice(100))
+        if (event.getOption("times") != null && event.getOption("times")?.asInt!! > 1) {
+            val rolls = List(event.getOption("times")?.asInt!!) {
+                getEntryMaxVal(
+                    getFileContent(event.subcommandName ?: "minor"),
+                    Dice.rollDice(100)
+                )
+            }
 
-      val embed =
-          EmbedBuilder()
-              .setAuthor(user.name, null, user.avatarUrl)
-              .setTitle("${event.subcommandName?:"minor"} miscast")
-              .setDescription(roll.description)
-              .setTimestamp(Instant.now())
+            val embed =
+                EmbedBuilder()
+                    .setAuthor(user.name, null, user.avatarUrl)
+                    .setTimestamp(Instant.now())
+                    .setTitle("Rolled ${rolls.size} ${event.subcommandName ?: "minor"} Miscasts")
+                    .setDescription(rolls.joinToString { "\n" + it.description })
 
-      event
-          .replyEmbeds(embed.build())
-          .setEphemeral(ephemeral)
-          .setActionRow(Dice.getActionRow())
-          .queue()
+            event
+                .replyEmbeds(embed.build())
+                .setEphemeral(ephemeral)
+                .setActionRow(Dice.getActionRow())
+                .queue()
+        } else {
+            val roll = getEntryMaxVal(getFileContent(event.subcommandName ?: "minor"), Dice.rollDice(100))
+
+            val embed =
+                EmbedBuilder()
+                    .setAuthor(user.name, null, user.avatarUrl)
+                    .setTitle("${event.subcommandName ?: "minor"} miscast")
+                    .setDescription(roll.description)
+                    .setTimestamp(Instant.now())
+
+            event
+                .replyEmbeds(embed.build())
+                .setEphemeral(ephemeral)
+                .setActionRow(Dice.getActionRow())
+                .queue()
+        }
     }
-  }
 
     private fun getFileContent(type: String): ArrayList<MiscastTableEntry> {
         val file = DiscordBot::class.java.getResource("/miscast/${type}.json")
@@ -99,7 +105,7 @@ class MiscastCommand : SlashCommand {
                 break
             }
         }
-        if(index == -1) index = 0
+        if (index == -1) index = 0
         return result[index]
     }
 

@@ -24,7 +24,7 @@ class BodyPartCommand : SlashCommand {
         val ephemeral = event.getOption("private") != null && event.getOption("private")?.asBoolean!!
 
         var user = event.user
-        if(event.getOption("user") != null){
+        if (event.getOption("user") != null) {
             user = event.getOption("user")?.asUser!!
         }
 
@@ -39,7 +39,7 @@ class BodyPartCommand : SlashCommand {
                 )
                 .setTimestamp(Instant.now())
                 .setTitle("Rolled ${rolls.size} times")
-                .setDescription(rolls.joinToString { "\n" + it})
+                .setDescription(rolls.joinToString { "\n" + it })
 
             event.replyEmbeds(embed.build()).setActionRow(Dice.getActionRow()).queue()
         } else {

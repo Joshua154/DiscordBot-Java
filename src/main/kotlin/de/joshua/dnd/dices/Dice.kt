@@ -21,7 +21,6 @@ class Dice {
         }
 
 
-
         fun getColor(per: Double): Color {
             val percent = per / 100
             val best = Color.decode("#066e32")
@@ -44,21 +43,21 @@ class Dice {
 
             var file: URL? = null
 
-            if(location <= 9){
+            if (location <= 9) {
                 file = DiscordBot::class.java.getResource("/crit/head.json")
-            }else if(location <= 24){
+            } else if (location <= 24) {
                 file = DiscordBot::class.java.getResource("/crit/arm.json")
-            }else if(location <= 44){
+            } else if (location <= 44) {
                 file = DiscordBot::class.java.getResource("/crit/arm.json")
-            }else if(location <= 79){
+            } else if (location <= 79) {
                 file = DiscordBot::class.java.getResource("/crit/body.json")
-            }else if(location <= 89){
+            } else if (location <= 89) {
                 file = DiscordBot::class.java.getResource("/crit/leg.json")
-            }else if(location <= 100){
+            } else if (location <= 100) {
                 file = DiscordBot::class.java.getResource("/crit/leg.json")
             }
 
-            if(file == null) return CritEntry(0, 0, "Error", "", "")
+            if (file == null) return CritEntry(0, 0, "Error", "", "")
 
 
             val klaxon = Klaxon()
@@ -75,23 +74,25 @@ class Dice {
                 }
             }
 
-            val critEntre : CritTableEntry = critTableEntries.find { it.max > intensity } ?: critTableEntries.maxByOrNull { it.max } ?: CritTableEntry(0, "", "Error", "out of bounds")
+            val critEntre: CritTableEntry =
+                critTableEntries.find { it.max > intensity } ?: critTableEntries.maxByOrNull { it.max }
+                ?: CritTableEntry(0, "", "Error", "out of bounds")
 
             return CritEntry(location, intensity, critEntre.description, critEntre.wounds, critEntre.additionalEffects)
         }
 
         fun getBodyPart(number: Int): String {
-            if(number <= 9){
+            if (number <= 9) {
                 return "Head"
-            }else if(number <= 24){
+            } else if (number <= 24) {
                 return "Left Arm"
-            }else if(number <= 44){
+            } else if (number <= 44) {
                 return "Right Arm"
-            }else if(number <= 79){
+            } else if (number <= 79) {
                 return "Body"
-            }else if(number <= 89){
+            } else if (number <= 89) {
                 return "Left Leg"
-            }else if(number <= 100){
+            } else if (number <= 100) {
                 return "Right Leg"
             }
             return "Error"
@@ -169,11 +170,11 @@ fun Int.toDigits(base: Int = 10): List<Int> = sequence {
 }.toList()
 
 fun getBodyPartNumber(bodyPart: String): Int {
-    when(bodyPart){
-        "head" ->  return 0
-        "arm" ->  return 10
-        "body" ->  return 45
-        "leg" ->  return 80
+    when (bodyPart) {
+        "head" -> return 0
+        "arm" -> return 10
+        "body" -> return 45
+        "leg" -> return 80
     }
     return 0
 }

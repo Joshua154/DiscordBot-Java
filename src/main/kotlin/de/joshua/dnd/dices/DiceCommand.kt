@@ -24,7 +24,7 @@ class DiceCommand : SlashCommand {
         val ephemeral = event.getOption("private") != null && event.getOption("private")?.asBoolean!!
 
         var user = event.user
-        if(event.getOption("user") != null){
+        if (event.getOption("user") != null) {
             user = event.getOption("user")?.asUser!!
         }
 

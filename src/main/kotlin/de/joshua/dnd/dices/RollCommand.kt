@@ -8,7 +8,6 @@ import net.dv8tion.jda.api.interactions.commands.OptionType
 import net.dv8tion.jda.api.interactions.commands.build.OptionData
 import net.dv8tion.jda.internal.interactions.CommandDataImpl
 import java.time.Instant
-import kotlin.random.Random
 
 @SlashCommands
 class RollCommand : SlashCommand {
@@ -24,7 +23,7 @@ class RollCommand : SlashCommand {
         val ephemeral = event.getOption("private") != null && event.getOption("private")?.asBoolean!!
 
         var user = event.user
-        if(event.getOption("user") != null){
+        if (event.getOption("user") != null) {
             user = event.getOption("user")?.asUser!!
         }
 

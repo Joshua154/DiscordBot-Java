@@ -11,27 +11,27 @@ import java.time.Instant
 @Buttons
 class DiceButton : Button {
     override fun id(): String {
-      return "joshibot-dnd-button-dice"
+        return "joshibot-dnd-button-dice"
     }
 
     override fun getButton(): ItemComponent {
-      return net.dv8tion.jda.api.interactions.components.buttons.Button.success(id(), "Dice")
+        return net.dv8tion.jda.api.interactions.components.buttons.Button.success(id(), "Dice")
     }
 
     override fun onExecute(event: ButtonInteractionEvent) {
-      val user = event.user
+        val user = event.user
 
-      val roll = Dice.rollDice()
+        val roll = Dice.rollDice()
 
-      val embed = EmbedBuilder()
-        .setAuthor(
-          user.name,
-          null,
-          user.avatarUrl
-        )
-        .setTitle(roll.toString())
-        .setTimestamp(Instant.now())
+        val embed = EmbedBuilder()
+            .setAuthor(
+                user.name,
+                null,
+                user.avatarUrl
+            )
+            .setTitle(roll.toString())
+            .setTimestamp(Instant.now())
 
-      event.replyEmbeds(embed.build()).setActionRow(Dice.getActionRow()).queue()
+        event.replyEmbeds(embed.build()).setActionRow(Dice.getActionRow()).queue()
     }
 }

@@ -9,12 +9,8 @@ import net.dv8tion.jda.api.interactions.commands.OptionType
 import net.dv8tion.jda.api.interactions.commands.build.OptionData
 import net.dv8tion.jda.internal.interactions.CommandDataImpl
 import java.awt.Color
-import java.io.File
-import java.io.FileInputStream
-import java.io.FileOutputStream
 import java.io.InputStream
 import java.io.OutputStream
-import java.sql.Timestamp
 
 @SlashCommands
 class createCampaign : SlashCommand {
@@ -133,6 +129,7 @@ class createCampaign : SlashCommand {
         }
         writer.flush()
     }
+
     private fun readCsv(inputStream: InputStream): MutableList<Campaign> {
         val reader = inputStream.bufferedReader()
         return reader.lineSequence()
