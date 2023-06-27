@@ -3,10 +3,7 @@ package de.joshua.dnd.dices
 import com.beust.klaxon.JsonReader
 import com.beust.klaxon.Klaxon
 import de.joshua.DiscordBot
-import de.joshua.dnd.dices.buttons.BodyPartButton
-import de.joshua.dnd.dices.buttons.CritButton
-import de.joshua.dnd.dices.buttons.DiceButton
-import de.joshua.dnd.dices.buttons.d10Button
+import de.joshua.dnd.dices.buttons.*
 import net.dv8tion.jda.api.interactions.components.ItemComponent
 import java.awt.Color
 import java.io.StringReader
@@ -101,6 +98,7 @@ class Dice {
         fun getActionRow(): List<ItemComponent> {
             val list = mutableListOf<ItemComponent>()
             list.add(DiceButton().getButton())
+            list.add(d6Button().getButton())
             list.add(d10Button().getButton())
             list.add(BodyPartButton().getButton())
             list.add(CritButton().getButton())
