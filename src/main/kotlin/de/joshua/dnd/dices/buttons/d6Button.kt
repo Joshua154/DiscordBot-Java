@@ -11,7 +11,7 @@ import java.time.Instant
 @Buttons
 class d6Button : Button {
     override fun id(): String {
-        return "joshibot-dnd-button-d10"
+        return "joshibot-dnd-button-d6"
     }
 
     override fun getButton(): ItemComponent {
