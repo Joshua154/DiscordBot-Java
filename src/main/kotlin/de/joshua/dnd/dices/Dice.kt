@@ -11,6 +11,7 @@ import net.dv8tion.jda.api.interactions.components.ItemComponent
 import java.awt.Color
 import java.io.StringReader
 import java.net.URL
+import kotlin.random.Random
 
 
 class Dice {
@@ -103,6 +104,57 @@ class Dice {
             list.add(BodyPartButton().getButton())
             list.add(CritButton().getButton())
             return list
+        }
+
+        fun rollDice(input: String): Int {
+            val parts = input.split("d", "+", "-")
+            val numDice = parts[0].toInt()
+            val diceSides = parts[1].toInt()
+
+            var sum = 0
+            repeat(numDice) {
+                sum += Random.nextInt(1, diceSides)
+            }
+
+            if (input.contains("+")) {
+                val modifier = parts[2].toInt()
+                sum += modifier
+            } else if (input.contains("-")) {
+                val modifier = parts[2].toInt()
+                sum -= modifier
+            }
+
+            return sum
+        }
+
+        fun rollDiceString(input: String): String {
+            val parts = input.split("d", "+", "-")
+            val numDice = parts[0].toInt()
+            val diceSides = parts[1].toInt()
+
+            val rolls = mutableListOf<Int>()
+            repeat(numDice) {
+                val roll = Random.nextInt(1, diceSides + 1)
+                rolls.add(roll)
+            }
+
+            val result = StringBuilder()
+            for (i in rolls.indices) {
+                result.append(rolls[i])
+                if (i != rolls.lastIndex) {
+                    result.append(", ")
+                }
+            }
+
+            if (input.contains("+")) {
+                val modifier = parts[2].toInt()
+                result.append(" + $modifier")
+            } else if (input.contains("-")) {
+                val modifier = parts[2].toInt()
+                result.append(" - $modifier")
+            }
+
+            return result.toString()
         }
     }
 }
