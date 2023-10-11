@@ -20,6 +20,7 @@ dependencies {
     implementation("org.reflections:reflections:0.10.2")
     implementation("com.beust:klaxon:5.5")
     implementation(kotlin("stdlib-jdk8"))
+    implementation(files("libs/NativeBass.jar"))
 }
 
 application {
