@@ -20,7 +20,8 @@ class DiscordBot {
 
     init {
         println("Starting Bot ...")
-        val botToken: String = System.getenv("discordBotToken")
+        val botToken: String = System.getenv("DISCORD_BOT_TOKEN")
+        println(botToken)
 
         val builder =
             JDABuilder.createDefault(botToken)
